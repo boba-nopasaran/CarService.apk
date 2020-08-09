@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="txz_sdk_init_wakeup_keywords">
+        <item>สวัสดี เสี่ยวตี้</item>
+    </string-array>
+</resources>

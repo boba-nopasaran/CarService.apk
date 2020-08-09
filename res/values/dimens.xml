@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="chooselist_item_height">64.0dip</dimen>
+    <dimen name="text_height">53.0dip</dimen>
+    <dimen name="dir_size">48.0dip</dimen>
+    <dimen name="distance_size">36.0dip</dimen>
+    <dimen name="roadname_size">24.0dip</dimen>
+    <dimen name="time_size">60.0dip</dimen>
+    <dimen name="datacard_dialog_top_padding">40.0dip</dimen>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="voice_string_color">#ffffffff</color>
+    <color name="tip_list_color">#ffffffff</color>
+    <color name="tip_string_color">#ffffffff</color>
+    <color name="white">#ffffffff</color>
+    <color name="volume_fill">#60ff004b</color>
+    <color name="volume_stroke">#ffff004b</color>
+    <color name="process_b">#60ffffff</color>
+    <color name="process_stroke">#ffffffff</color>
+    <color name="voiceui">#d8000000</color>
+</resources>

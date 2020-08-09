@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/scrollview" android:background="@null" android:layout_width="fill_parent" android:layout_height="380.0dip" android:layout_alignParentTop="true">
+        <LinearLayout android:orientation="vertical" android:id="@id/linearlayout" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </ScrollView>
+    <RelativeLayout android:background="@null" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_alignParentBottom="true">
+        <ImageButton android:id="@id/help" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginBottom="10.0dip" android:src="@drawable/help" android:scaleType="centerInside" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/white" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/statement" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <com.car.voice.ui.VolumeView android:id="@id/voice_button" android:background="@null" android:layout_width="200.0dip" android:layout_height="200.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/microphone" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:src="@drawable/recorder" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,11 @@
+.class public interface abstract Lcom/autonavi/amap/mapcore/interfaces/IAMapListener;
+.super Ljava/lang/Object;
+.source "IAMapListener.java"
+
+
+# virtual methods
+.method public abstract afterDrawFrame(ILcom/autonavi/ae/gmap/GLMapState;)V
+.end method
+
+.method public abstract afterDrawLabel(ILcom/autonavi/ae/gmap/GLMapState;)V
+.end method

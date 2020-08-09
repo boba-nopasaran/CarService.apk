@@ -1,0 +1,19 @@
+.class public abstract Lcom/jinglingtec/ijiazublctor/BleEventAdapter/service/gatt/GattConnectionState;
+.super Ljava/lang/Object;
+.source "GattConnectionState.java"
+
+
+# static fields
+.field public static final STATE_CONNECTED:I = 0x2
+
+.field public static final STATE_DISCONNECTED:I
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method

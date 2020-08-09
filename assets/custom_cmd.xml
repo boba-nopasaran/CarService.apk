@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+   <url name="/customize/go/home/page">
+        <cmd name="回桌面" />
+        <cmd name="回到桌面" />
+        <cmd name="打开桌面" />
+        <cmd name="返回桌面" />
+        <cmd name="回到首页" />
+        <cmd name="回到主页" />
+        <cmd name="返回首页" />
+        <cmd name="返回主页" />
+        <cmd name="回到主界面" />
+        <cmd name="返回主界面" />
+    </url>
+</root>

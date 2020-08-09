@@ -1,0 +1,706 @@
+Signature-Version: 1.0
+Created-By: 1.0 (Android SignApk)
+SHA1-Digest-Manifest: /rv2NdTFn+Jny4LEXGqF/HgWuJA=
+
+Name: assets/ORANGE.png
+SHA1-Digest-Manifest: rqywDXWVytCw0/ABIxoCT8NqZvo=
+
+Name: assets/map_assets/building.data
+SHA1-Digest-Manifest: Uu2+h3Lg4UNN3mV7CgJ+LrpSEdw=
+
+Name: assets/zoomin_pressed.png
+SHA1-Digest-Manifest: 5wj8V/Ko/HJ9IAXhL+6GURuiDrA=
+
+Name: assets/map_assets/style_33_10_1472718797.data
+SHA1-Digest-Manifest: PXgcZHppNKGwc3MmYpNDJG6Ddlk=
+
+Name: com/jinglingtec/ijiazublctor/sdk/aidl/IjiazuMenuEvent.aidl
+SHA1-Digest-Manifest: oXoqmrEPTa85d2BiN2fqaOTox0k=
+
+Name: assets/map_assets/icons_7_10_1467115754.data
+SHA1-Digest-Manifest: eQkUqkb/JvKklOZU6jFkaRDpGrI=
+
+Name: res/layout/poi_list_item.xml
+SHA1-Digest-Manifest: mDV5oBTVhI+eeqXQ3aHEw4+muCw=
+
+Name: res/layout/httpserver_activity.xml
+SHA1-Digest-Manifest: TI7AjSWO02yXJIOQQS6N5vhONNo=
+
+Name: res/layout/phone_call_incoming.xml
+SHA1-Digest-Manifest: amV8epXV9ajhTdweVYnfWcCcuc4=
+
+Name: assets/map_assets/style_32_10_1472718769.data
+SHA1-Digest-Manifest: dmKTRGcrPlNYnZPAloGBiKFzs6k=
+
+Name: assets/location_unselected.png
+SHA1-Digest-Manifest: U338vw933e2eO0TeYGuRV03L3Lg=
+
+Name: assets/zoomout_pressed.png
+SHA1-Digest-Manifest: kW0E5qeuYpLQlUoPPoCXhZGT2l0=
+
+Name: assets/map_assets/tmc_blind_severe_congestion.data
+SHA1-Digest-Manifest: ne/0P0yINEkfatw4nUv2OGIUEww=
+
+Name: res/drawable-mdpi-v4/hud_sou6.png
+SHA1-Digest-Manifest: 2qkAc12n6xkahK4ItANCly3Q1kc=
+
+Name: pinyindb/pinyin_mapping.xml
+SHA1-Digest-Manifest: TKjPYz/2etGbJ22iJIZY10PyVKQ=
+
+Name: res/drawable-mdpi-v4/hangup_selector.xml
+SHA1-Digest-Manifest: fr/qkryJV8GvQoi6gHl3chOkiq0=
+
+Name: res/drawable-mdpi-v4/bar_b.png
+SHA1-Digest-Manifest: NM6dF/Tif4MPYWjLhEB6fBFdURY=
+
+Name: assets/navi/GSafeConfig.dat
+SHA1-Digest-Manifest: iFqTHrJY5NxAro+DHTqCNNyG9P4=
+
+Name: assets/map_assets/tgl_n.data
+SHA1-Digest-Manifest: S/yf878wczP8+CuLA5iQqHCsxck=
+
+Name: res/layout/dark_all.xml
+SHA1-Digest-Manifest: DD988fHP8Ng+eXj27OBw+yC3xag=
+
+Name: assets/map_assets/tnl_n.data
+SHA1-Digest-Manifest: cbsBf1wWIAXBtquGYCHZLc3xB+c=
+
+Name: assets/map_assets/4006_1444880364.data
+SHA1-Digest-Manifest: KUnlCxglBP36pVkL/R2NY52RuI0=
+
+Name: assets/map_assets/style_100_10_1467006152.data
+SHA1-Digest-Manifest: WdDeHrHZ75UFthA9emjlJslCAYo=
+
+Name: assets/marker_default.png
+SHA1-Digest-Manifest: HOEf2zML9BFsmDDGmRUOiBIb+uA=
+
+Name: res/raw/recognition_error.mp3
+SHA1-Digest-Manifest: SUncnwLlpUnoIcQjPobj1bc6M1E=
+
+Name: res/layout/voice_dialog_wide.xml
+SHA1-Digest-Manifest: xkC8dVYRXVCGb8c0i8hg0us5vA4=
+
+Name: assets/ap.data
+SHA1-Digest-Manifest: 2ZV9eRb38FeXgwPT5hAR+XmP/cE=
+
+Name: assets/amap_car.png
+SHA1-Digest-Manifest: fpE/xFimm2MKR58TFuLsxVgFFDA=
+
+Name: assets/marker_gps_no_sharing.png
+SHA1-Digest-Manifest: YbV6caMy39LnIZTrZNP6zttrZPQ=
+
+Name: assets/YELLOW.png
+SHA1-Digest-Manifest: F6iDP/krBlx75A0qJGOnNpjeIKo=
+
+Name: res/drawable-mdpi-v4/hud_sou11.png
+SHA1-Digest-Manifest: vfphpmljXJCztj2wBPMFwJ3+x4I=
+
+Name: res/layout/power_dialog.xml
+SHA1-Digest-Manifest: vbIO5imPCuVjcTZQ/qjMmQhccqk=
+
+Name: assets/custtexture_aolr.png
+SHA1-Digest-Manifest: UUKpsgKtqV+p7FXqLsfBxcR6eqU=
+
+Name: assets/map_assets/style_31_10_1472718738.data
+SHA1-Digest-Manifest: 9PskBCY6AKT0Uk98TAkj3Erm7j0=
+
+Name: assets/map_assets/tyl.data
+SHA1-Digest-Manifest: NRsc+OhINjA5VS3aIxSDtb2lUEU=
+
+Name: assets/amap_man.png
+SHA1-Digest-Manifest: y556qp5usG7AoR5ya4C/bxsbgjY=
+
+Name: res/layout/imageviewer.xml
+SHA1-Digest-Manifest: G9YpfmkdQl4k7rOeK6ua7pUweNU=
+
+Name: res/layout/shortcut_sysevent.xml
+SHA1-Digest-Manifest: TJmvyQRx0MmoCAYqOjCBIeEqR2k=
+
+Name: res/drawable-mdpi-v4/hud_sou12.png
+SHA1-Digest-Manifest: McX5vOGH0FqybdVM6qMfu6Pkbsc=
+
+Name: assets/map_assets/VM3DRes/roadbk_main_night.png
+SHA1-Digest-Manifest: tLrd+qozzvJHmxJDM0OEsfs/dBc=
+
+Name: assets/maps_dav_compass_needle_large.png
+SHA1-Digest-Manifest: VfWKdKo9SIf2waineEf6rFOx/dg=
+
+Name: assets/map_assets/dash.data
+SHA1-Digest-Manifest: sIkUldFLDJbylrxQ0IEi2FdXNSc=
+
+Name: res/drawable-mdpi-v4/dialog_bg.9.png
+SHA1-Digest-Manifest: qCgbvII7OlbnyISeLFP/u7iw6tc=
+
+Name: res/drawable-mdpi-v4/hud_sou2.png
+SHA1-Digest-Manifest: o+diI++E5SwVGclB4zDUWGzndkc=
+
+Name: res/drawable-mdpi-v4/hangup.png
+SHA1-Digest-Manifest: kiIbudC73zhpZudbsWXYdsejmTA=
+
+Name: res/drawable-mdpi-v4/recorder.png
+SHA1-Digest-Manifest: gefGzCyKhccKRGYsTFpGJGTWPw0=
+
+Name: assets/map_assets/bktile_n.data
+SHA1-Digest-Manifest: sv0tXXEi00lTtqNvGw0PyrxNxrQ=
+
+Name: assets/map_assets/VM3DRes/roadbk_main.png
+SHA1-Digest-Manifest: ZLSwIOlIFqmnkPwb4N/Fqj8iiIk=
+
+Name: assets/map_assets/icons_50_10_1470645645.data
+SHA1-Digest-Manifest: qXG7qCX+hV5HF8Sf6O0t3l9GHKc=
+
+Name: res/raw/speech_end.mp3
+SHA1-Digest-Manifest: uU5NM4TN3nQenjdEcD+rU8LtUaU=
+
+Name: com/jinglingtec/ijiazublctor/sdk/aidl/ITtsAPI.aidl
+SHA1-Digest-Manifest: 3nib+BD0f612LNQ93Go4lKzXpbg=
+
+Name: res/drawable-mdpi-v4/hangup_ing.png
+SHA1-Digest-Manifest: 9SyZZNYMUo0OGwYXIegkJXXCnME=
+
+Name: com/jinglingtec/ijiazublctor/sdk/aidl/IjiazuCallback.aidl
+SHA1-Digest-Manifest: ZkShHkYmYTRgwgLPqgD8trfY6VM=
+
+Name: assets/map_assets/style_12_10_1467006104.data
+SHA1-Digest-Manifest: DZXOlnyl0bXu3RQB48yYJa41zFk=
+
+Name: assets/amap_sdk_shaders/texture_normal.glsl
+SHA1-Digest-Manifest: sQ9qc03p/pzXaw3/wabiaW+dZJo=
+
+Name: assets/map_assets/VM3DRes/d_yellow_night.png
+SHA1-Digest-Manifest: 8pVZa05t/o4kODKdJE9waQv8x2I=
+
+Name: res/layout/webview_display.xml
+SHA1-Digest-Manifest: tixpdFRUxZGUOssONztaLThbKeA=
+
+Name: assets/amap_bus.png
+SHA1-Digest-Manifest: L7nCf/sPijNqxKVN1dzoEu/aQ7g=
+
+Name: assets/zoomout_unselected.png
+SHA1-Digest-Manifest: c8nrhe+Ym9p0EdRsk1IdHsMlYSI=
+
+Name: res/drawable-mdpi-v4/hud_sou9.png
+SHA1-Digest-Manifest: CImJ3wBKmvZUQrrRBDQzo/ohYik=
+
+Name: assets/map_assets/tmc_blind_amble.data
+SHA1-Digest-Manifest: reUE9HzzWcCM/4tw4a0+NExoEbw=
+
+Name: assets/CYAN.png
+SHA1-Digest-Manifest: laa1NkgF/5WRcG/BYs0CxmxxHmE=
+
+Name: assets/GREEN.png
+SHA1-Digest-Manifest: JXwPIefxHX9UNytrfckZgCds37A=
+
+Name: assets/map_assets/VM3DRes/cross_bg.png
+SHA1-Digest-Manifest: BW/+HLE8Yf/L1a8rrVWlbRzlT8s=
+
+Name: ijiazu.sdk.android.independent.apk
+SHA1-Digest-Manifest: ZNmkR/U22nPA/KOJpc0Z1zxDYtQ=
+
+Name: res/layout/datacard_dialog.xml
+SHA1-Digest-Manifest: 0vbvlJP0AJ346/cJ4SgfWmT28Y4=
+
+Name: res/drawable-mdpi-v4/hud_sou5.png
+SHA1-Digest-Manifest: iltqGvCW4GQudqQyGnb6GuJPx4M=
+
+Name: com/jinglingtec/ijiazublctor/sdk/aidl/IjiazuKeyEvent.aidl
+SHA1-Digest-Manifest: R6BiOs1Po6r3Q7b8u96V3iSO6Og=
+
+Name: assets/navi/odd_config.bin
+SHA1-Digest-Manifest: uzrEX1cZyQRhy9Hnh42pLTStsWc=
+
+Name: assets/map_assets/3d_sky_day.data
+SHA1-Digest-Manifest: AqcwMLwWM6ghQAXycZeZ25Kt74w=
+
+Name: res/raw/recognition_cancel.mp3
+SHA1-Digest-Manifest: dfSQ/eeXf+fTDdDj5UGkYHvO6Kc=
+
+Name: res/drawable-mdpi-v4/suspend.png
+SHA1-Digest-Manifest: 27f09RMNTYCysL9byrNqpN3pr6k=
+
+Name: assets/map_assets/tgl_l.data
+SHA1-Digest-Manifest: Rb7xBGXp5yrsUyHwfgrPzB5WJrY=
+
+Name: org/apache/http/entity/mime/version.properties
+SHA1-Digest-Manifest: tJIQeBUu+v9MvwYq0ShXaiwWhgA=
+
+Name: assets/map_assets/icons_4_10_1467115754.data
+SHA1-Digest-Manifest: BsEYOshmUtrD5Kw+54UZmMn3UqY=
+
+Name: assets/navi/cityinfo.dat
+SHA1-Digest-Manifest: 35Vz7mPUAp1J6BXDbw5yF72i9o8=
+
+Name: assets/amap_sdk_shaders/point.glsl
+SHA1-Digest-Manifest: 8/rSWQ11ZGdY4c3mOMmbNl7RS4c=
+
+Name: assets/ivw/5559542f.jet
+SHA1-Digest-Manifest: HsEKmrobh+3Dt0oGU+Qi1Fzu9q8=
+
+Name: assets/ROSE.png
+SHA1-Digest-Manifest: bUomByOBANEruNzboAm5NUvbg4k=
+
+Name: assets/amap_sdk_lineTexture.png
+SHA1-Digest-Manifest: 7vZXrEUSzh0DRcRnB5W8nCX42EU=
+
+Name: assets/RED.png
+SHA1-Digest-Manifest: mwPYQydILIp4ITYekK9vT/e6r3s=
+
+Name: assets/map_assets/citybounds.ini
+SHA1-Digest-Manifest: JFjxLAGWFKi3dtb26VHkWFMQD2M=
+
+Name: assets/map_assets/tyl_n.data
+SHA1-Digest-Manifest: kjWjmQjBISaS5Je66HqDOfvWNfk=
+
+Name: res/drawable-mdpi-v4/voice_b.9.png
+SHA1-Digest-Manifest: Ei/WX6knWE25jJDZVk/NSDvIrdQ=
+
+Name: res/drawable-mdpi-v4/help.png
+SHA1-Digest-Manifest: 1K+S9GTNCJVpzFZ6jD8Yp9kItPM=
+
+Name: res/drawable-mdpi-v4/background.png
+SHA1-Digest-Manifest: JDnFLdMTuVa1VFFDe9X+qYvgmrk=
+
+Name: ijiazu.sdk.android.independent.unaligned.apk
+SHA1-Digest-Manifest: oXoOEp2RQFYJMIOb5dpNGNac8q0=
+
+Name: assets/navi/changeplay.bin
+SHA1-Digest-Manifest: JpNjzMHx/cUY3V9RMFeTfFQC3MU=
+
+Name: assets/map_assets/style_1_10_1487060096.data
+SHA1-Digest-Manifest: e/ixe5IvfJOy28rc2k1eBgb6+14=
+
+Name: assets/location_map_gps_3d.png
+SHA1-Digest-Manifest: MEw0ZyWHK7NVeU9Ox3leNhHjiiY=
+
+Name: res/layout/timer_dialog.xml
+SHA1-Digest-Manifest: 1CA4swC2COfzefQ7vPvEjjMY5Hc=
+
+Name: assets/ae/GNaviConfig.xml
+SHA1-Digest-Manifest: D9MwgPhqyBWzwAM5yNJyuQpw08M=
+
+Name: assets/map_assets/tnl_l.data
+SHA1-Digest-Manifest: FJb1GS4MncYF3cZ9rNJPBGhqDdI=
+
+Name: res/drawable-mdpi-v4/reboot.png
+SHA1-Digest-Manifest: vW+PzJh/R2OUaTTS/iHrCPJ33yk=
+
+Name: assets/map_assets/style_6_10_1472699757.data
+SHA1-Digest-Manifest: sojUhIsOk5sw1r4ctI66nuR9UEg=
+
+Name: assets/custtexture_green.png
+SHA1-Digest-Manifest: 5rcpUjmJnZf8UhLqD1+6m3cF+l4=
+
+Name: assets/map_assets/tmc_blind_congestion.data
+SHA1-Digest-Manifest: HegpBg6Dy4tSqQ8z15ig0bUZp6M=
+
+Name: assets/map_assets/bktile.data
+SHA1-Digest-Manifest: iJXnTLG7ubvCii3aQWg8/S8ooFk=
+
+Name: res/drawable-mdpi-v4/roundbg_selector.xml
+SHA1-Digest-Manifest: SEtHVa+VLEfR3/7Aa5suqRsBzFE=
+
+Name: res/drawable-mdpi-v4/dial_ing.png
+SHA1-Digest-Manifest: w5VJRKVhwwg/YPW8A5WytUH8AIQ=
+
+Name: assets/zoomout_selected.png
+SHA1-Digest-Manifest: sB0bbZksAB6l1JgucxDIm3FtgVw=
+
+Name: assets/map_assets/style_14_10_1473055591.data
+SHA1-Digest-Manifest: m1HshXBJLQJMnVKgOxHfHjugShI=
+
+Name: assets/map_assets/3dportrait.xml
+SHA1-Digest-Manifest: WH/C1rFcTrquOi3iGkz2ieuUdY4=
+
+Name: assets/map_assets/style_3_10_1472699701.data
+SHA1-Digest-Manifest: CE6D1cQ3cTQX9C6p+f6fdw6QD8o=
+
+Name: assets/map_assets/tbl_l.data
+SHA1-Digest-Manifest: +L8qoca4HAn4v565xABFTX1pCyA=
+
+Name: res/layout/toast_note.xml
+SHA1-Digest-Manifest: G0GbOCxEBpYRlM/U2aqUG/zVrHg=
+
+Name: assets/amap_end.png
+SHA1-Digest-Manifest: o5Tm5zGn2ws+k4vFqcRSneJPSAk=
+
+Name: res/drawable-mdpi-v4/hud_sou7.png
+SHA1-Digest-Manifest: vub9vHluXAKCYrt5tsl5IOh6/XA=
+
+Name: assets/map_assets/config_2_1_1470363686.data
+SHA1-Digest-Manifest: lm4tgCWa9iS/nH10KBe0QDkQfls=
+
+Name: assets/location_map_gps_locked.png
+SHA1-Digest-Manifest: RjCaijsa8hGPC5MCT38jz/rn3pE=
+
+Name: assets/hud.png
+SHA1-Digest-Manifest: JE9Qexbf5ExMeWxWgPETndK/Ql4=
+
+Name: res/raw/camstart.ogg
+SHA1-Digest-Manifest: CdPamTQcoYsL/wbdpjPKzWIZ5qA=
+
+Name: assets/map_assets/tyl_l.data
+SHA1-Digest-Manifest: hDeY7hJRwHF2xIb3F6li5QYDE6Y=
+
+Name: res/layout/voice_dialog.xml
+SHA1-Digest-Manifest: hVWBUgVd3AZTLM3sFFkuEo3zovE=
+
+Name: res/drawable-mdpi-v4/dial_selector.xml
+SHA1-Digest-Manifest: KrdA3Gt9Y5RryHy+i8p4FIjef8I=
+
+Name: assets/map_assets/style_10_10_1472718686.data
+SHA1-Digest-Manifest: /pjPjSMeeOeiwyL1pw3a2EjJcag=
+
+Name: assets/map_assets/style_5_10_1473055896.data
+SHA1-Digest-Manifest: KCAW4oKBRy/XxrugsthM1FW2Dco=
+
+Name: res/drawable-mdpi-v4/voice_3.png
+SHA1-Digest-Manifest: z3ezcv5K28QUkNeM/qQfyiraP9w=
+
+Name: assets/navi/default_config.bin
+SHA1-Digest-Manifest: qlgy7wZg1TsHKvg7JCJGMVtdtL8=
+
+Name: res/drawable-mdpi-v4/hud_sou15.png
+SHA1-Digest-Manifest: EvGCw/tX+cpiZw1+q9ILImphj+A=
+
+Name: assets/map_assets/VM3DRes/d_yellow.png
+SHA1-Digest-Manifest: uF68NKwjiK4JVd/P2enYXbDLqk4=
+
+Name: com/jinglingtec/ijiazublctor/sdk/aidl/IDeviceCallback.aidl
+SHA1-Digest-Manifest: 8w9MU6ABZ8ObdGHOn/1rr2p/HDQ=
+
+Name: assets/map_assets/3dlandscape.xml
+SHA1-Digest-Manifest: xAelekHhAo8JUZDldOwHFUvVU68=
+
+Name: res/drawable-mdpi-v4/voice_2.png
+SHA1-Digest-Manifest: PT3CK0k8dPaz/BfQTZd37xwuAA4=
+
+Name: assets/map_assets/icons_3_10_1472614463.data
+SHA1-Digest-Manifest: wKdZpjqyXhM03+BTuwf0VbIZkOk=
+
+Name: res/drawable-mdpi-v4/download_icon.png
+SHA1-Digest-Manifest: sdTwuBDqlKTAZrgM2ViLTnvXZB0=
+
+Name: assets/custtexture_no.png
+SHA1-Digest-Manifest: j4t/T9XBRs7CXLYvksX5HKPt3xI=
+
+Name: res/drawable-mdpi-v4/number_bg.png
+SHA1-Digest-Manifest: XBjxiUk0n+RHS5xopkVdkj8d8G8=
+
+Name: org/jsoup/nodes/entities-full.properties
+SHA1-Digest-Manifest: NwfYghFpxeygsHfagttWyP450uY=
+
+Name: assets/amap_start.png
+SHA1-Digest-Manifest: lLBVU43y7CCWZ8Nbf3CClYHR93o=
+
+Name: assets/map_assets/trl_l.data
+SHA1-Digest-Manifest: Al5Ax3EpmxzRZwsN/6nAyZVFtis=
+
+Name: res/raw/recognition_success.mp3
+SHA1-Digest-Manifest: /PfQwEVYqbwlLan8jEb3Fe15HjU=
+
+Name: assets/map_assets/VM3DRes/cross_bg_day.png
+SHA1-Digest-Manifest: bUh2y14TC7oRMxtS3CcW7DZtZQs=
+
+Name: assets/amap_configer.data
+SHA1-Digest-Manifest: 88Jespy8d88poc86F3nhjZdStHE=
+
+Name: assets/map_assets/tnl.data
+SHA1-Digest-Manifest: ZiRhrweFQw7Tg6d3ZI1Yt/SqcSE=
+
+Name: res/drawable-mdpi-v4/hud_sou14.png
+SHA1-Digest-Manifest: six4p2ztnLTpR7ojyDiRkXdFTxI=
+
+Name: com/jinglingtec/ijiazublctor/demo/service/SaveLog.aidl
+SHA1-Digest-Manifest: EyQBTvhfV3Um4FfKSneT4UcwNFk=
+
+Name: assets/map_assets/config_1_1_1470722888.data
+SHA1-Digest-Manifest: 86KWQJaA0+HatM7uVHaTu+D7jQg=
+
+Name: assets/custtexture_slow.png
+SHA1-Digest-Manifest: z05LrXmp3gLHj9Lw8J0IsiRbeI4=
+
+Name: res/drawable-mdpi-v4/voice_1.png
+SHA1-Digest-Manifest: ymZKSCcNhLDJhZus7JVc2ZJOuIY=
+
+Name: res/drawable-mdpi-v4/tip_b.9.png
+SHA1-Digest-Manifest: 1gd6UftLuWEPjfQwQnBKMn5jA3o=
+
+Name: assets/location_selected.png
+SHA1-Digest-Manifest: wStImNa1T0aEkicMJ2eIX31MO3w=
+
+Name: assets/MAGENTA.png
+SHA1-Digest-Manifest: CbVxTMv/PFKHPjfltvIhEb/jtUg=
+
+Name: res/drawable-mdpi-v4/line_frame_black.xml
+SHA1-Digest-Manifest: 4Bri3gFL3W7VQC4f2e1nsuMQrt4=
+
+Name: res/drawable-mdpi-v4/recorder_ing.png
+SHA1-Digest-Manifest: YlsBUJNdTKT61TovuQrauwFIEZ4=
+
+Name: assets/map_assets/4005_1444880362.data
+SHA1-Digest-Manifest: XV3/JUkVWH/bs5M7rD0PAqMdKJ4=
+
+Name: assets/map_assets/trl.data
+SHA1-Digest-Manifest: vV2Z3vJxPgc8gjcmKqzLcK3OVv4=
+
+Name: assets/map_assets/roadarrow.data
+SHA1-Digest-Manifest: LBPXGRIUJqQ/X6+bxIG3mI/AhW0=
+
+Name: assets/map_assets/icons_1_10_1472518901.data
+SHA1-Digest-Manifest: U5ESjzpbGTuk6N2+pSavwOJkKS0=
+
+Name: assets/map_assets/lineround.data
+SHA1-Digest-Manifest: etmK7SG1sUYfEzvdXg9O11Bb7aw=
+
+Name: assets/amap_sdk_shaders/texture.glsl
+SHA1-Digest-Manifest: RSw6QiYupznLczJINULwQXIBxgs=
+
+Name: assets/VoiceGrammar.conf
+SHA1-Digest-Manifest: iEgb7Ij/gLe7fzfqaIzk7WPoIJo=
+
+Name: resources.arsc
+SHA1-Digest-Manifest: Cc+m70zFMks145jAHntESxE1cF0=
+
+Name: AndroidManifest.xml
+SHA1-Digest-Manifest: 3Uc5D4UzLS4eD9VeCjmBQ8hjqJo=
+
+Name: assets/zoomin_unselected.png
+SHA1-Digest-Manifest: yIhV0ynRkLp58BH/Ebbq9Mpnk98=
+
+Name: res/drawable-mdpi-v4/dial.png
+SHA1-Digest-Manifest: 0lxw3EPKNM3YrfZ/6BC3LQfeTJo=
+
+Name: res/drawable-mdpi-v4/hud_sou4.png
+SHA1-Digest-Manifest: U521kXhEi6Vja0CatFRGJxBZ/F0=
+
+Name: org/jsoup/nodes/entities-base.properties
+SHA1-Digest-Manifest: sz73WQCs6oeNIBNqaLxenv3wgSs=
+
+Name: pinyindb/pinyin_gwoyeu_mapping.xml
+SHA1-Digest-Manifest: bkX+LUlZgXmZe95SrIkYAOcgQ4s=
+
+Name: assets/map_assets/style_15_10_1467006143.data
+SHA1-Digest-Manifest: i1aS9YPYZZBio0RZkZwWOH8+tXU=
+
+Name: res/drawable-mdpi-v4/shutdown.png
+SHA1-Digest-Manifest: fTONHDU7rw5gukAYJBMySGe4hz0=
+
+Name: assets/map_assets/4007_1444880366.data
+SHA1-Digest-Manifest: 3pfvsapabr4YE7V8y90ZQxiQWiQ=
+
+Name: res/layout/chooselist_item.xml
+SHA1-Digest-Manifest: w7YP0ASHqm3pJblmPjp7D05US2I=
+
+Name: assets/autonavi_Resource1_1_0.png
+SHA1-Digest-Manifest: gdpZqpxbYqeSJ31gVu1JLdRdRG4=
+
+Name: assets/tracelinetexture.png
+SHA1-Digest-Manifest: C4GZyPGfBeS/O/f/QmP6hV2LJg8=
+
+Name: res/drawable-mdpi-v4/download_b.png
+SHA1-Digest-Manifest: ZmGGslSqrFCxLlyWd6sDsx6mL1A=
+
+Name: classes.dex
+SHA1-Digest-Manifest: CyJk0v/4P6/s2lm+pvNpi0e56Zo=
+
+Name: assets/map_assets/tgl.data
+SHA1-Digest-Manifest: pWRhHQoDKPH1GiS/zckSA4gxRx4=
+
+Name: com/jinglingtec/ijiazublctor/sdk/aidl/IjiazuAPI.aidl
+SHA1-Digest-Manifest: 1VYUoEUA3hxWKnJQK4cmVshXkDc=
+
+Name: assets/map_assets/style_13_10_1472699980.data
+SHA1-Digest-Manifest: /FWLs743Eg3ZIAjj/D9B+urYp9I=
+
+Name: assets/AZURE.png
+SHA1-Digest-Manifest: 39ixrPmrzZYiV8mdw5Kc8JYnGHQ=
+
+Name: assets/BLUE.png
+SHA1-Digest-Manifest: FSGLPwJDlZCmjZQDgcv1W5iNATw=
+
+Name: res/layout/shortcut_navi.xml
+SHA1-Digest-Manifest: Eb1UTZW/iw6L2xqjtcTlBzZPzG4=
+
+Name: assets/map_assets/icons_8_10_1467115754.data
+SHA1-Digest-Manifest: mZ9azCnNSJmHJXPiu+xvhNpRxE0=
+
+Name: assets/PinyinVoiceGrammar.conf
+SHA1-Digest-Manifest: gh8P4RKbAFZ9r5pZuLAfAkO2KGI=
+
+Name: assets/map_assets/trl_n.data
+SHA1-Digest-Manifest: g8Bk94prJXa5lUW/9lw/IturHTs=
+
+Name: assets/map_indoor_select.png
+SHA1-Digest-Manifest: QtRgs1BSVWaQamsdfhbMYxRaIfo=
+
+Name: assets/map_assets/icons_11_10_1467005909.data
+SHA1-Digest-Manifest: G4fmDCMIuPicTV1XzY266RCBrpg=
+
+Name: res/drawable-mdpi-v4/hud_sou10.png
+SHA1-Digest-Manifest: 6qfxrjLA52nQ87rY7QNU00Et/iE=
+
+Name: assets/map_assets/VM3DRes/road_bottom_day.png
+SHA1-Digest-Manifest: t5FNKtgqLRrQVG3IQIbGid4MaOw=
+
+Name: assets/map_assets/style_8_10_1472699781.data
+SHA1-Digest-Manifest: Z0BRme5AtdcwveiX6IntHBRwTLA=
+
+Name: assets/map_assets/4001_1444880323.data
+SHA1-Digest-Manifest: 8Mtc1NEQI7OMvDoxYZ5TbAV1nqs=
+
+Name: assets/map_assets/VM3DRes/d_yellow_day.png
+SHA1-Digest-Manifest: jvDInMYzwgHKRSh/16jEf4NxXq0=
+
+Name: assets/map_assets/4002_1444880325.data
+SHA1-Digest-Manifest: F0wBkDUc88swM2/3FvUOsz8YlqE=
+
+Name: assets/map_assets/VM3DRes/road_bottom.png
+SHA1-Digest-Manifest: ASLTqGJbsu2UPyMGriiPxfMa9g8=
+
+Name: assets/amap_sdk_shaders/texture_layer.glsl
+SHA1-Digest-Manifest: GyIB/5sjoAQ+/gmRgum0CtATMow=
+
+Name: assets/VIOLET.png
+SHA1-Digest-Manifest: z9Awj47Y07j04vp3euf2RRxJwr4=
+
+Name: assets/custtexture.png
+SHA1-Digest-Manifest: L4QAaTi5m1ce6W7FSZ3RUz+3aVU=
+
+Name: assets/vector3d_arrow_in.png
+SHA1-Digest-Manifest: l87DGLHxsxoTe1mgsm0ppEHGLmE=
+
+Name: assets/map_assets/4004_1444880359.data
+SHA1-Digest-Manifest: Yh89el6L0xZuZuRlfNYvc9W1UBM=
+
+Name: assets/custtexture_bad.png
+SHA1-Digest-Manifest: lTduf//9aBE5ZslOtzJx7EvK4VA=
+
+Name: res/xml/accessory_filter.xml
+SHA1-Digest-Manifest: z2fzcPfzeuGobOT3ZixZvyRaxlY=
+
+Name: assets/map_assets/VM3DRes/roadbk_main_day.png
+SHA1-Digest-Manifest: U2/rYOwHrcYc9K4K1utWwxP7FY0=
+
+Name: res/drawable-mdpi-v4/icon_toast_brightness.png
+SHA1-Digest-Manifest: z/JW4asTYAVCgHYQfIx9xCNQsnc=
+
+Name: com/jinglingtec/ijiazublctor/sdk/aidl/IAPIController.aidl
+SHA1-Digest-Manifest: ie9bZU0XgOuNZIYLZDhQo/+c6nk=
+
+Name: assets/map_assets/style_50_10_1470645645.data
+SHA1-Digest-Manifest: 2lp1pe/R5twrZUm1686/p+3bC3g=
+
+Name: assets/location_pressed.png
+SHA1-Digest-Manifest: CpvrGjhEFf0n//WdclVLxpT4Khg=
+
+Name: assets/map_assets/icons_6_10_1472699628.data
+SHA1-Digest-Manifest: CIICaG69Ecf4BnB1Mt6qEzL+zpQ=
+
+Name: assets/map_assets/icons_2_10_1467277925.data
+SHA1-Digest-Manifest: vcKPs105A32tCpUsE4aTS6URK2I=
+
+Name: assets/amap_sdk_lineDashTexture.png
+SHA1-Digest-Manifest: tsAZNc6DhOCk6S8+qXzOG+5CGIc=
+
+Name: assets/custom_cmd.xml
+SHA1-Digest-Manifest: LBn7MHfyEbH4Ex5v0OEVErddZyA=
+
+Name: res/drawable-mdpi-v4/timer_dialog_btn_bg.xml
+SHA1-Digest-Manifest: IEm+ZeOFOsui4Vk1BqAGiz05k9o=
+
+Name: res/drawable-xhdpi-v4/ic_launcher.png
+SHA1-Digest-Manifest: 55vn6/1R4mdErYEvju9TjaMM6vY=
+
+Name: assets/map_assets/tmc_blind_smoothly.data
+SHA1-Digest-Manifest: yc2pQQa4LmG13gFI1CBS9w9x34g=
+
+Name: pinyindb/unicode_to_hanyu_pinyin.txt
+SHA1-Digest-Manifest: +pZoFAhL7+9SPf06nOIVmAeI52A=
+
+Name: assets/map_assets/waterline.data
+SHA1-Digest-Manifest: wo5E5VaEB+c+KGfdn1vo/VthyA0=
+
+Name: res/drawable-mdpi-v4/hud_sou8.png
+SHA1-Digest-Manifest: HlgNgFQvV2QaecjSZSmfU8Xg/7w=
+
+Name: assets/map_assets/tbl_n.data
+SHA1-Digest-Manifest: h/DtRWyChW2mndCRyachLRkgYtY=
+
+Name: assets/map_assets/VM3DRes/cross_bg_night.png
+SHA1-Digest-Manifest: 0nKJoHqt0opkZz5yz5Sut7NCmUE=
+
+Name: assets/map_assets/style_30_10_1472718710.data
+SHA1-Digest-Manifest: lnNAA1yDH+hnp3kr7juvgZw2cEI=
+
+Name: org/apache/http/version.properties
+SHA1-Digest-Manifest: THx2ONODIe2TAFhfyRuMPK3d/Pg=
+
+Name: assets/map_assets/dash_cd.data
+SHA1-Digest-Manifest: RIYapBWTfd3a12OHKOkeuUQVnbo=
+
+Name: res/drawable-mdpi-v4/voice_0.png
+SHA1-Digest-Manifest: ulZIWc3vDtBWIYBHyjFCdBbgkhc=
+
+Name: res/raw/recognition_start.mp3
+SHA1-Digest-Manifest: iGktOkAU16gNqLJST40pRzkpd+M=
+
+Name: res/drawable-mdpi-v4/hud_sou3.png
+SHA1-Digest-Manifest: IBJs6hJ99lvwF51A/qv5CxbNUPY=
+
+Name: assets/map_assets/tbl.data
+SHA1-Digest-Manifest: QHyWbQkiQhfROl+znCH2U4OkErg=
+
+Name: assets/ap1.data
+SHA1-Digest-Manifest: a9Rge+0v60sQzy/VTfN6lbFBl10=
+
+Name: assets/map_assets/4003_1444880356.data
+SHA1-Digest-Manifest: VafqX968lP2fvSwjvW+++6zhq/E=
+
+Name: res/drawable-mdpi-v4/hud_sou13.png
+SHA1-Digest-Manifest: dDGIp/0Y1rw7BRtVyMb7JEwVzEk=
+
+Name: assets/map_assets/dash_tq.data
+SHA1-Digest-Manifest: E+AFhM5QDifUWXWq8SzUW54bY1E=
+
+Name: assets/map_assets/style_4_10_1473057390.data
+SHA1-Digest-Manifest: uLeXVZ83116KbzrUs/E8nbmKgJA=
+
+Name: assets/custtexture_grayred.png
+SHA1-Digest-Manifest: qkMb4nUtfW2ElYGyqu6K+vHIKmA=
+
+Name: assets/zoomin_selected.png
+SHA1-Digest-Manifest: eNKDUaoq2JFn2VEGIATxrjI5wag=
+
+Name: assets/map_assets/3d_sky_night.data
+SHA1-Digest-Manifest: mUU6Wg4SGF4nP57LpO3q7RaAZWg=
+
+Name: com/jinglingtec/ijiazublctor/sdk/aidl/IjiazuDeviceEvent.aidl
+SHA1-Digest-Manifest: ujRMkf8aMQkJJqAvPNds2HbeBuE=
+
+Name: assets/map_assets/VM3DRes/road_bottom_night.png
+SHA1-Digest-Manifest: fNvwL3TZ+v56GN+wVZsOWB/Jmc0=
+
+Name: com/jinglingtec/ijiazublctor/sdk/aidl/IDeviceAPI.aidl
+SHA1-Digest-Manifest: Z9RIYawloTmfHCT9DD3Bxl5Z980=
+
+Name: res/drawable-mdpi-v4/hud_sou16.png
+SHA1-Digest-Manifest: l37pi7vk3zvISfdPRAFjpBCdiao=
+
+Name: assets/infowindow_bg.9.png
+SHA1-Digest-Manifest: 6ZZi4SY8MPN8q8QsMUXo6NeJneo=
+
+Name: assets/map_assets/tmc_blind_null.data
+SHA1-Digest-Manifest: lpig1Smt7oT6edXrpJIFLYwuJJ8=
+
+Name: assets/map_assets/search_scenic_icon.data
+SHA1-Digest-Manifest: 8zuQM3l1oIYRwkNl0NO8/7dzSHo=
+
+Name: assets/offlinemapv4.png
+SHA1-Digest-Manifest: KcWjOZ3gb3dD6hx/wyS8Yul8UUI=
+
+Name: assets/map_assets/style_17_10_1470361281.data
+SHA1-Digest-Manifest: v2CEKTmDHpKSdO1srBgVFquoW1I=
+
+Name: assets/map_assets/icons_5_10_1471231608.data
+SHA1-Digest-Manifest: wHiigRVNEzEn+znq79i1qET303A=
+

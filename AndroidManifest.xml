@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:sharedUserId="android.uid.system" coreApp="true" package="com.car.carservice" platformBuildVersionCode="22" platformBuildVersionName="5.1-1568030917">
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.DEVICE_POWER"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION"/>
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_GPS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+    <uses-permission android:name="android.permission.READ_SETTINGS"/>
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_PRIVILEGED"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-feature android:name="android.hardware.bluetooth_le" android:required="true"/>
+    <uses-feature android:name="android.hardware.usb.accessory"/>
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name="com.car.ServiceApplication">
+        <meta-data android:name="com.baidu.lbsapi.API_KEY" android:value="AlwwMr6GQ1QdunmibfMtlj9E"/>
+        <meta-data android:name="com.baidu.speech.APP_ID" android:value="6645820"/>
+        <meta-data android:name="com.baidu.speech.API_KEY" android:value="tHx48DxSkOipNa5oITAXyhyc"/>
+        <meta-data android:name="com.baidu.speech.SECRET_KEY" android:value="a477e53ce810b1c8c2e28a09375d8cb9"/>
+        <receiver android:name="com.car.SystemEventReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.car.provider.btprovider" android:exported="true" android:name="com.car.provider.BTProvider"/>
+        <service android:name="com.car.voice.VoiceRecognizerService">
+            <intent-filter>
+                <action android:name="com.car.common.IVoiceRecognizer"/>
+                <action android:name="com.car.voice.VoiceRecognizerService"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.baidu.speech.VoiceRecognitionService"/>
+        <service android:name="com.car.httpserver.CarHttpService"/>
+        <service android:name="com.car.gpsservice.CarGPSService">
+            <intent-filter>
+                <action android:name="com.car.gpsservice.CarGPSService"/>
+            </intent-filter>
+        </service>
+        <service android:exported="true" android:name="com.car.CarService">
+            <intent-filter>
+                <action android:name="com.car.CarService"/>
+                <action android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED"/>
+                <action android:name="android.hardware.usb.action.USB_ACCESSORY_DETACHED"/>
+            </intent-filter>
+            <meta-data android:name="android.hardware.usb.action.USB_ACCESSORY_ATTACHED" android:resource="@xml/accessory_filter"/>
+        </service>
+        <service android:enabled="true" android:name="com.baidu.location.f" android:process=":remote"/>
+        <service android:exported="true" android:name="com.txznet.sdk.TXZService">
+            <intent-filter>
+                <action android:name="com.car.carservice.service.TXZService"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </service>
+        <activity android:exported="true" android:icon="@drawable/ic_launcher" android:label="@string/car_assistant" android:name="com.car.httpserver.HttpServerActivity" android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="com.car.httpserver.HttpServerActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:name="com.car.voice.ui.VoiceUIActivity" android:taskAffinity="com.car.carservice.voiceui" android:theme="@style/voice_activity"/>
+        <activity android:excludeFromRecents="true" android:name="com.car.systemfunc.NaviHudActivity" android:theme="@style/hud_activity"/>
+        <activity android:excludeFromRecents="true" android:name="com.car.systemfunc.ImageViewActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/*"/>
+            </intent-filter>
+        </activity>
+        <service android:enabled="true" android:exported="true" android:name="com.jinglingtec.ijiazublctor.services.IjiazuService">
+            <intent-filter>
+                <action android:name="com.jinglingtec.ijiazublctor.service"/>
+            </intent-filter>
+        </service>
+        <service android:exported="false" android:name="com.jinglingtec.ijiazublctor.BleEventAdapter.service.gatt.GattService"/>
+        <service android:exported="false" android:name="com.jinglingtec.ijiazublctor.BleEventAdapter.service.discovery.device.DeviceDiscoveryService"/>
+        <service android:name="com.amap.api.location.APSService"/>
+        <service android:name="com.car.malfunction.MalfunctionService">
+            <intent-filter>
+                <action android:name="android.malfunction.MalfunctionService"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="com.amap.api.v2.apikey" android:value="7172c29a2a9b9196d584ee274550f73d"/>
+        <meta-data android:name="IFLYTEK_APPKEY" android:value="5559542f"/>
+        <meta-data android:name="IFLYTEK_CHANNEL" android:value="Android_Car_Service"/>
+        <meta-data android:name="appkey" android:value="B1PFDX1611000000"/>
+        <meta-data android:name="appsecret" android:value="hf82bf30ccd10b29ad32b89922485fc318"/>
+        <service android:enabled="true" android:exported="true" android:name="com.car.jiazu.RemoteService"/>
+    </application>
+</manifest>

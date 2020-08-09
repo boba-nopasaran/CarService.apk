@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="hud_bg" />
+    <item type="id" name="sim_alert" />
+    <item type="id" name="sim_info" />
+    <item type="id" name="ok" />
+    <item type="id" name="android_code" />
+    <item type="id" name="android_tip" />
+    <item type="id" name="myviewer" />
+    <item type="id" name="phone_call_msg" />
+    <item type="id" name="phone_call_accept" />
+    <item type="id" name="phone_call_reject" />
+    <item type="id" name="row_id" />
+    <item type="id" name="title" />
+    <item type="id" name="subtitle" />
+    <item type="id" name="distance" />
+    <item type="id" name="suspend" />
+    <item type="id" name="shutdown" />
+    <item type="id" name="reboot" />
+    <item type="id" name="shortcut_dir" />
+    <item type="id" name="shortcut_distanceremain" />
+    <item type="id" name="shortcut_direction" />
+    <item type="id" name="shortcut_roadname" />
+    <item type="id" name="shortcut_time" />
+    <item type="id" name="shortcut_detail" />
+    <item type="id" name="progressbar" />
+    <item type="id" name="cancel" />
+    <item type="id" name="seperator" />
+    <item type="id" name="vSeparator" />
+    <item type="id" name="btnShutdown" />
+    <item type="id" name="scrollview" />
+    <item type="id" name="linearlayout" />
+    <item type="id" name="help" />
+    <item type="id" name="voice_button" />
+    <item type="id" name="microphone" />
+    <item type="id" name="bottombar" />
+    <item type="id" name="webView1" />
+    <item type="id" name="progressBar1" />
+</resources>

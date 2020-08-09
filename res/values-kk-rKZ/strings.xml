@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="car_assistant">Car assistant</string>
+    <string name="start_speak">Ол сөйлей бастады</string>
+    <string name="cancel">болдырылмады</string>
+    <string name="btconn">BT Ол бар болды%sбайланыс</string>
+    <string name="btdisconn">BT ажыратылған</string>
+    <string name="android_tip">Android/IOS</string>
+    <string name="ios_tip">IOS</string>
+    <string name="download_tip">Car assistant қолдану жүктеу，Сканерлеу астына Екі өлшемді коды</string>
+    <string name="http_title">Car assistant</string>
+    <string name="http_body">Car assistant қолдану</string>
+    <string name="http_download">жүктеу</string>
+    <string name="http_weixin">Жоғарғы оң жағындағы басыңыз ашады браузерді параметрін таңдаңыз</string>
+    <string name="no_connection">Recorder Желі байланысы жоқ!</string>
+    <string name="adapter_off">күш ажыратылған，%1$dсекунд кейін Ұйқыға。</string>
+    <string name="car_stopped_off">кеткен%1$dминут анықталған жоқ Автомобиль қозғалысы，Энергияны үнемдеу мақсатында，%2$dсекунд Ұйқыға。</string>
+    <string name="acc_offed_reboot">машина Power Жабу Exceed%1$dминут，Энергияны үнемдеу мақсатында，%2$dсекунд жауып болады。</string>
+    <string name="sleep_dialog_title">тыныштық Кері санақ</string>
+    <string name="sleep_dialog_text">жүйе ерік үдемелі Ұйқы</string>
+    <string name="sleep_dialog_ok">бірден тыныштық</string>
+    <string name="sleep_dialog_cancel">болдырылмады тыныштық</string>
+    <string name="reboot_dialog_title">Жұмысты аяқтау</string>
+    <string name="reboot_dialog_text">жүйе ерік үдемелі Жұмысты аяқтау</string>
+    <string name="reboot_dialog_ok">бірден Жұмысты аяқтау</string>
+    <string name="reboot_dialog_cancel">болдырылмады Жұмысты аяқтау</string>
+    <string name="tip_time_h">сағат</string>
+    <string name="tip_time_m">минут</string>
+    <string name="tip_insert_sdcard">өтінемін салу SD карта</string>
+    <string name="tip_collision">соқтығысу құлыптау Бейне</string>
+    <string name="tip_video_capture">Бейне ату</string>
+    <string name="tip_lock">құлыптау Бейне</string>
+    <string name="tip_sdcard_full">SD карта қалған ғарыш жеткіліксіз，өтінемін дейін тазалау SD карта</string>
+    <string name="voice_disabled">Шақыру Дауыс көмекшісі қолжетімсіз</string>
+    <string name="request_bond">%1$sма өтініш Binding</string>
+    <string name="agree">келісу</string>
+    <string name="refuse">бас тартуға</string>
+    <string name="loc_from_app">тағайындалған орын</string>
+    <string name="waiting_txz_init">TXZ неинициализированные（өтінемін қамтамасыз ету Желі қосылымы）</string>
+    <string name="suspend">тыныштық</string>
+    <string name="reboot">Қайта-іс</string>
+</resources>
