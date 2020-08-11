@@ -703,6 +703,16 @@
     return-object p1
 .end method
 
+#by boba 11.08.2020
+#restore wifi
+.method static synthetic access$boba(Lcom/car/systemfunc/PowerConnectionReceiver;)Landroid/content/ContentResolver;
+.locals 1
+iget-object v0, p0, Lcom/car/systemfunc/PowerConnectionReceiver;->mContext:Landroid/content/Context;
+invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+move-result-object v0
+return-object v0
+.end method
+
 .method private bindMusicService()V
     .locals 8
 
