@@ -51,41 +51,43 @@
 
     invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    iget-object v2, p0, Lcom/car/systemfunc/PowerConnectionReceiver$12;->this$0:Lcom/car/systemfunc/PowerConnectionReceiver;
+#by boba 11.08.2020
+#restore wifi
+#    iget-object v2, p0, Lcom/car/systemfunc/PowerConnectionReceiver$12;->this$0:Lcom/car/systemfunc/PowerConnectionReceiver;
 
-    invoke-static {v2}, Lcom/car/systemfunc/PowerConnectionReceiver;->access$200(Lcom/car/systemfunc/PowerConnectionReceiver;)Landroid/content/Context;
+#    invoke-static {v2}, Lcom/car/systemfunc/PowerConnectionReceiver;->access$200(Lcom/car/systemfunc/PowerConnectionReceiver;)Landroid/content/Context;
 
-    move-result-object v2
+#    move-result-object v2
 
-    const-string v3, "connectivity"
+#    const-string v3, "connectivity"
 
-    invoke-virtual {v2, v3}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+#    invoke-virtual {v2, v3}, Landroid/content/Context;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
-    move-result-object v0
+#    move-result-object v0
 
-    check-cast v0, Landroid/net/ConnectivityManager;
+#    check-cast v0, Landroid/net/ConnectivityManager;
 
-    invoke-virtual {v0}, Landroid/net/ConnectivityManager;->getActiveNetworkInfo()Landroid/net/NetworkInfo;
+#    invoke-virtual {v0}, Landroid/net/ConnectivityManager;->getActiveNetworkInfo()Landroid/net/NetworkInfo;
 
-    move-result-object v1
+#    move-result-object v1
 
-    if-eqz v1, :cond_1
+#    if-eqz v1, :cond_1
 
-    invoke-virtual {v1}, Landroid/net/NetworkInfo;->isAvailable()Z
+#    invoke-virtual {v1}, Landroid/net/NetworkInfo;->isAvailable()Z
 
-    move-result v2
+#    move-result v2
 
-    if-eqz v2, :cond_1
+#    if-eqz v2, :cond_1
 
-    invoke-virtual {v1}, Landroid/net/NetworkInfo;->getType()I
+#    invoke-virtual {v1}, Landroid/net/NetworkInfo;->getType()I
 
-    move-result v2
+#    move-result v2
 
-    if-ne v2, v6, :cond_1
+#    if-ne v2, v6, :cond_1
 
-    iget-object v2, p0, Lcom/car/systemfunc/PowerConnectionReceiver$12;->this$0:Lcom/car/systemfunc/PowerConnectionReceiver;
+#    iget-object v2, p0, Lcom/car/systemfunc/PowerConnectionReceiver$12;->this$0:Lcom/car/systemfunc/PowerConnectionReceiver;
 
-    iput-boolean v6, v2, Lcom/car/systemfunc/PowerConnectionReceiver;->mWifiRecover:Z
+#    iput-boolean v6, v2, Lcom/car/systemfunc/PowerConnectionReceiver;->mWifiRecover:Z
 
     iget-object v2, p0, Lcom/car/systemfunc/PowerConnectionReceiver$12;->this$0:Lcom/car/systemfunc/PowerConnectionReceiver;
 
@@ -117,7 +119,13 @@
 
 #by boba 11.08.2020
 #restore wifi
+invoke-virtual {v2}, Landroid/net/wifi/WifiManager;->isWifiEnabled()Z
+move-result v2
+if-eqz v2, :cond_1
+
 iget-object v7, p0, Lcom/car/systemfunc/PowerConnectionReceiver$12;->this$0:Lcom/car/systemfunc/PowerConnectionReceiver;
+iput-boolean v6, v7, Lcom/car/systemfunc/PowerConnectionReceiver;->mWifiRecover:Z
+	
 invoke-static {v7}, Lcom/car/systemfunc/PowerConnectionReceiver;->access$boba(Lcom/car/systemfunc/PowerConnectionReceiver;)Landroid/content/ContentResolver;
 move-result-object v7
 const-string v8, "wifi_on"
