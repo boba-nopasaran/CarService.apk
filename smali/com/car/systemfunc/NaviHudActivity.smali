@@ -426,7 +426,7 @@
 
     iput-boolean v0, p0, Lcom/car/systemfunc/NaviHudActivity;->mFinishedNow:Z
 
-    invoke-virtual {p0}, Lcom/car/systemfunc/NaviHudActivity;->finish()V
+#    invoke-virtual {p0}, Lcom/car/systemfunc/NaviHudActivity;->finish()V
 
     :cond_0
     return-void
