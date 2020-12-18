@@ -45,10 +45,12 @@
     <string name="suspend">Сон</string>
     <string name="shutdown">Отключение</string>
     <string name="reboot">Перезагрузка</string>
-    <string name="east">В</string>
-    <string name="west">З</string>
-    <string name="south">Ю</string>
-    <string name="north">С</string>
+<!--by boba 18.12.2020
+cardinal points completely -->
+    <string name="east">Восток</string>
+    <string name="west">Запад</string>
+    <string name="south">Юг</string>
+    <string name="north">Север</string>
     <string name="ota_latest">Последняя версия установлена</string>
     <string name="ota_downloading">Загрузка ...</string>
     <string name="background_dl">Загрузка в фоновом режиме</string>

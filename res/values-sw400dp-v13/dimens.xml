@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="dir_size">40.0dip</dimen>
+<!--by boba 18.12.2020
+cardinal points completely -->
+    <dimen name="dir_size">34.0dip</dimen>
     <dimen name="distance_size">30.0dip</dimen>
     <dimen name="roadname_size">20.0dip</dimen>
     <dimen name="time_size">52.0dip</dimen>
