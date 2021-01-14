@@ -544,7 +544,10 @@
 
     const-wide/16 v2, 0xbb8
 
-    invoke-virtual {v0, v1, v2, v3}, Landroid/os/Handler;->sendEmptyMessageDelayed(IJ)Z
+#by boba 02.03.2020
+#fast fullscreen
+#    invoke-virtual {v0, v1, v2, v3}, Landroid/os/Handler;->sendEmptyMessageDelayed(IJ)Z
+invoke-virtual {v0, v1}, Landroid/os/Handler;->sendEmptyMessage(I)Z
 
     .line 269
     const/4 v0, 0x0
