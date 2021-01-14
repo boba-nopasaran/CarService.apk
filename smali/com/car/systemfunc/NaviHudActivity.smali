@@ -262,14 +262,16 @@
 
     iput v7, p0, Lcom/car/systemfunc/NaviHudActivity;->mMaximumBacklight:I
 
-    .line 144
-    invoke-virtual {p0}, Lcom/car/systemfunc/NaviHudActivity;->getWindow()Landroid/view/Window;
-
-    move-result-object v7
-
-    const/16 v8, 0x80
-
-    invoke-virtual {v7, v8}, Landroid/view/Window;->addFlags(I)V
+#by boba 4.09.2020
+#screen off for screen saver
+#    .line 144
+#    invoke-virtual {p0}, Lcom/car/systemfunc/NaviHudActivity;->getWindow()Landroid/view/Window;
+#
+#    move-result-object v7
+#
+#    const/16 v8, 0x80
+#
+#    invoke-virtual {v7, v8}, Landroid/view/Window;->addFlags(I)V
 
     .line 145
     new-instance v4, Landroid/content/IntentFilter;
