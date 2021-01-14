@@ -1263,7 +1263,10 @@
     .line 547
     iget-object v3, p0, Lcom/car/systemfunc/NaviChangeReceiver;->mWindowManagerParams:Landroid/view/WindowManager$LayoutParams;
 
-    const/16 v4, 0x33
+#by boba 08.01.2021
+#cardinal points completely
+#    const/16 v4, 0x33
+const/16 v4, 0x55
 
     iput v4, v3, Landroid/view/WindowManager$LayoutParams;->gravity:I
 
@@ -1308,46 +1311,48 @@ const/16 v4, -0x2
 
     invoke-virtual {v3, v4}, Landroid/view/View;->getWindowVisibleDisplayFrame(Landroid/graphics/Rect;)V
 
-    .line 555
-    iget-object v3, p0, Lcom/car/systemfunc/NaviChangeReceiver;->mWindowManagerParams:Landroid/view/WindowManager$LayoutParams;
-
-    iget-object v4, p0, Lcom/car/systemfunc/NaviChangeReceiver;->mRect:Landroid/graphics/Rect;
-
-    invoke-virtual {v4}, Landroid/graphics/Rect;->width()I
-
-    move-result v4
-
-    add-int/lit16 v4, v4, -0xb4
-
-    iput v4, v3, Landroid/view/WindowManager$LayoutParams;->x:I
-
-    .line 556
-    iget-object v3, p0, Lcom/car/systemfunc/NaviChangeReceiver;->mWindowManagerParams:Landroid/view/WindowManager$LayoutParams;
-
-    iget-object v4, p0, Lcom/car/systemfunc/NaviChangeReceiver;->mRect:Landroid/graphics/Rect;
-
-    invoke-virtual {v4}, Landroid/graphics/Rect;->height()I
-
-    move-result v4
-
-    iget-object v5, p0, Lcom/car/systemfunc/NaviChangeReceiver;->mParentView:Landroid/view/View;
-
-    invoke-virtual {v5}, Landroid/view/View;->getHeight()I
-
-    move-result v5
-
-    sub-int/2addr v4, v5
-
-    iput v4, v3, Landroid/view/WindowManager$LayoutParams;->y:I
-
-    .line 557
-    iget-object v3, p0, Lcom/car/systemfunc/NaviChangeReceiver;->mWindowManager:Landroid/view/WindowManager;
-
-    iget-object v4, p0, Lcom/car/systemfunc/NaviChangeReceiver;->mParentView:Landroid/view/View;
-
-    iget-object v5, p0, Lcom/car/systemfunc/NaviChangeReceiver;->mWindowManagerParams:Landroid/view/WindowManager$LayoutParams;
-
-    invoke-interface {v3, v4, v5}, Landroid/view/WindowManager;->updateViewLayout(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
+#by boba 08.01.2021
+#cardinal points completely
+#    .line 555
+#    iget-object v3, p0, Lcom/car/systemfunc/NaviChangeReceiver;->mWindowManagerParams:Landroid/view/WindowManager$LayoutParams;
+#
+#    iget-object v4, p0, Lcom/car/systemfunc/NaviChangeReceiver;->mRect:Landroid/graphics/Rect;
+#
+#    invoke-virtual {v4}, Landroid/graphics/Rect;->width()I
+#
+#    move-result v4
+#
+#    add-int/lit16 v4, v4, -0xb4
+#
+#    iput v4, v3, Landroid/view/WindowManager$LayoutParams;->x:I
+#
+#    .line 556
+#    iget-object v3, p0, Lcom/car/systemfunc/NaviChangeReceiver;->mWindowManagerParams:Landroid/view/WindowManager$LayoutParams;
+#
+#    iget-object v4, p0, Lcom/car/systemfunc/NaviChangeReceiver;->mRect:Landroid/graphics/Rect;
+#
+#    invoke-virtual {v4}, Landroid/graphics/Rect;->height()I
+#
+#    move-result v4
+#
+#    iget-object v5, p0, Lcom/car/systemfunc/NaviChangeReceiver;->mParentView:Landroid/view/View;
+#
+#    invoke-virtual {v5}, Landroid/view/View;->getHeight()I
+#
+#    move-result v5
+#
+#    sub-int/2addr v4, v5
+#
+#    iput v4, v3, Landroid/view/WindowManager$LayoutParams;->y:I
+#
+#    .line 557
+#    iget-object v3, p0, Lcom/car/systemfunc/NaviChangeReceiver;->mWindowManager:Landroid/view/WindowManager;
+#
+#    iget-object v4, p0, Lcom/car/systemfunc/NaviChangeReceiver;->mParentView:Landroid/view/View;
+#
+#    iget-object v5, p0, Lcom/car/systemfunc/NaviChangeReceiver;->mWindowManagerParams:Landroid/view/WindowManager$LayoutParams;
+#
+#    invoke-interface {v3, v4, v5}, Landroid/view/WindowManager;->updateViewLayout(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
     .line 559
     const-string v3, "ro.hud.enable"

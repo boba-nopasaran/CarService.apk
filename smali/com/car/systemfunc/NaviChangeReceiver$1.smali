@@ -31,6 +31,35 @@
     return-void
 .end method
 
+#by boba 08.01.2021
+#cardinal points completely
+.method getSTR(I)Ljava/lang/String;
+.locals 1
+const/16 v0, 0x8
+new-array v0, v0, [I
+fill-array-data v0, :array_0
+add-int/lit8 p1, p1, 0x16
+rem-int/lit16 p1, p1, 0x168
+div-int/lit8 p1, p1, 0x2d
+aget p1, v0, p1
+move-object/from16 v0, p0
+iget-object v0, v0, Lcom/car/systemfunc/NaviChangeReceiver$1;->this$0:Lcom/car/systemfunc/NaviChangeReceiver;
+iget-object v0, v0, Lcom/car/systemfunc/NaviChangeReceiver;->mContext:Landroid/content/Context;
+invoke-virtual {v0, p1}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+move-result-object p1
+return-object p1
+:array_0
+.array-data 4
+    0x7f09003b
+    0x7f090058
+    0x7f090038
+    0x7f090059
+    0x7f09003a
+    0x7f09005a
+    0x7f090039
+    0x7f09005b
+.end array-data
+.end method
 
 # virtual methods
 .method public handleMessage(Landroid/os/Message;)V
@@ -413,241 +442,247 @@
     .local v4, "angle":I
     rem-int/lit16 v7, v4, 0x168
 
-    .line 170
-    .local v7, "direction":I
-    and-int/lit8 v17, v13, 0x7f
-
-    .line 171
-    .local v17, "speed":I
-    const-string v6, ""
-
-    .line 172
-    .local v6, "dirStr":Ljava/lang/String;
-    const-string v21, "CarSvc_NaviChangeReceiver"
-
-    new-instance v22, Ljava/lang/StringBuilder;
-
-    invoke-direct/range {v22 .. v22}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v23, "cur direction is "
-
-    invoke-virtual/range {v22 .. v23}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v22
-
-    move-object/from16 v0, v22
-
-    invoke-virtual {v0, v7}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
-
-    move-result-object v22
-
-    invoke-virtual/range {v22 .. v22}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v22
-
-    invoke-static/range {v21 .. v22}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    .line 173
-    int-to-float v0, v7
-
-    move/from16 v21, v0
-
-    const/high16 v22, 0x41b40000    # 22.5f
-
-    cmpl-float v21, v21, v22
-
-    if-lez v21, :cond_c
-
-    int-to-float v0, v7
-
-    move/from16 v21, v0
-
-    const v22, 0x431d8000    # 157.5f
-
-    cmpg-float v21, v21, v22
-
-    if-gez v21, :cond_c
-
-    .line 174
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/car/systemfunc/NaviChangeReceiver$1;->this$0:Lcom/car/systemfunc/NaviChangeReceiver;
-
-    move-object/from16 v21, v0
-
-    move-object/from16 v0, v21
-
-    iget-object v0, v0, Lcom/car/systemfunc/NaviChangeReceiver;->mContext:Landroid/content/Context;
-
-    move-object/from16 v21, v0
-
-    const v22, 0x7f090038
-
-    invoke-virtual/range {v21 .. v22}, Landroid/content/Context;->getString(I)Ljava/lang/String;
-
-    move-result-object v8
-
-    .line 179
-    :cond_5
-    :goto_1
-    int-to-float v0, v7
-
-    move/from16 v21, v0
-
-    const/high16 v22, 0x42e10000    # 112.5f
-
-    cmpl-float v21, v21, v22
-
-    if-lez v21, :cond_d
-
-    int-to-float v0, v7
-
-    move/from16 v21, v0
-
-    const v22, 0x43778000    # 247.5f
-
-    cmpg-float v21, v21, v22
-
-    if-gez v21, :cond_d
-
-    .line 180
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/car/systemfunc/NaviChangeReceiver$1;->this$0:Lcom/car/systemfunc/NaviChangeReceiver;
-
-    move-object/from16 v21, v0
-
-    move-object/from16 v0, v21
-
-    iget-object v0, v0, Lcom/car/systemfunc/NaviChangeReceiver;->mContext:Landroid/content/Context;
-
-    move-object/from16 v21, v0
-
-    const v22, 0x7f09003a
-
-    invoke-virtual/range {v21 .. v22}, Landroid/content/Context;->getString(I)Ljava/lang/String;
-
-    move-result-object v16
-
-    .line 184
-    :cond_6
-    :goto_2
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/car/systemfunc/NaviChangeReceiver$1;->this$0:Lcom/car/systemfunc/NaviChangeReceiver;
-
-    move-object/from16 v21, v0
-
-    move-object/from16 v0, v21
-
-    iget-boolean v0, v0, Lcom/car/systemfunc/NaviChangeReceiver;->mIsChinese:Z
-
-    move/from16 v21, v0
-
-    if-eqz v21, :cond_f
-
-    .line 185
-    if-eqz v8, :cond_7
-
-    .line 186
-    new-instance v21, Ljava/lang/StringBuilder;
-
-    invoke-direct/range {v21 .. v21}, Ljava/lang/StringBuilder;-><init>()V
-
-    move-object/from16 v0, v21
-
-    invoke-virtual {v0, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v21
-
-    move-object/from16 v0, v21
-
-    invoke-virtual {v0, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v21
-
-    invoke-virtual/range {v21 .. v21}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v6
-
-    .line 188
-    :cond_7
-    if-eqz v20, :cond_8
-
-    .line 189
-    new-instance v21, Ljava/lang/StringBuilder;
-
-    invoke-direct/range {v21 .. v21}, Ljava/lang/StringBuilder;-><init>()V
-
-    move-object/from16 v0, v21
-
-    invoke-virtual {v0, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v21
-
-    move-object/from16 v0, v21
-
-    move-object/from16 v1, v20
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v21
-
-    invoke-virtual/range {v21 .. v21}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v6
-
-    .line 191
-    :cond_8
-    if-eqz v16, :cond_9
-
-    .line 192
-    new-instance v21, Ljava/lang/StringBuilder;
-
-    invoke-direct/range {v21 .. v21}, Ljava/lang/StringBuilder;-><init>()V
-
-    move-object/from16 v0, v21
-
-    invoke-virtual {v0, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v21
-
-    move-object/from16 v0, v21
-
-    move-object/from16 v1, v16
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v21
-
-    invoke-virtual/range {v21 .. v21}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v6
-
-    .line 194
-    :cond_9
-    if-eqz v14, :cond_a
-
-    .line 195
-    new-instance v21, Ljava/lang/StringBuilder;
-
-    invoke-direct/range {v21 .. v21}, Ljava/lang/StringBuilder;-><init>()V
-
-    move-object/from16 v0, v21
-
-    invoke-virtual {v0, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v21
-
-    move-object/from16 v0, v21
-
-    invoke-virtual {v0, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v21
-
-    invoke-virtual/range {v21 .. v21}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v6
+#by boba 08.01.2021
+#cardinal points completely
+#    .line 170
+#    .local v7, "direction":I
+#    and-int/lit8 v17, v13, 0x7f
+#
+#    .line 171
+#    .local v17, "speed":I
+#    const-string v6, ""
+#
+#    .line 172
+#    .local v6, "dirStr":Ljava/lang/String;
+#    const-string v21, "CarSvc_NaviChangeReceiver"
+#
+#    new-instance v22, Ljava/lang/StringBuilder;
+#
+#    invoke-direct/range {v22 .. v22}, Ljava/lang/StringBuilder;-><init>()V
+#
+#    const-string v23, "cur direction is "
+#
+#    invoke-virtual/range {v22 .. v23}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+#
+#    move-result-object v22
+#
+#    move-object/from16 v0, v22
+#
+#    invoke-virtual {v0, v7}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+#
+#    move-result-object v22
+#
+#    invoke-virtual/range {v22 .. v22}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+#
+#    move-result-object v22
+#
+#    invoke-static/range {v21 .. v22}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+#
+#    .line 173
+#    int-to-float v0, v7
+#
+#    move/from16 v21, v0
+#
+#    const/high16 v22, 0x41b40000    # 22.5f
+#
+#    cmpl-float v21, v21, v22
+#
+#    if-lez v21, :cond_c
+#
+#    int-to-float v0, v7
+#
+#    move/from16 v21, v0
+#
+#    const v22, 0x431d8000    # 157.5f
+#
+#    cmpg-float v21, v21, v22
+#
+#    if-gez v21, :cond_c
+#
+#    .line 174
+#    move-object/from16 v0, p0
+#
+#    iget-object v0, v0, Lcom/car/systemfunc/NaviChangeReceiver$1;->this$0:Lcom/car/systemfunc/NaviChangeReceiver;
+#
+#    move-object/from16 v21, v0
+#
+#    move-object/from16 v0, v21
+#
+#    iget-object v0, v0, Lcom/car/systemfunc/NaviChangeReceiver;->mContext:Landroid/content/Context;
+#
+#    move-object/from16 v21, v0
+#
+#    const v22, 0x7f090038
+#
+#    invoke-virtual/range {v21 .. v22}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+#
+#    move-result-object v8
+#
+#    .line 179
+#    :cond_5
+#    :goto_1
+#    int-to-float v0, v7
+#
+#    move/from16 v21, v0
+#
+#    const/high16 v22, 0x42e10000    # 112.5f
+#
+#    cmpl-float v21, v21, v22
+#
+#    if-lez v21, :cond_d
+#
+#    int-to-float v0, v7
+#
+#    move/from16 v21, v0
+#
+#    const v22, 0x43778000    # 247.5f
+#
+#    cmpg-float v21, v21, v22
+#
+#    if-gez v21, :cond_d
+#
+#    .line 180
+#    move-object/from16 v0, p0
+#
+#    iget-object v0, v0, Lcom/car/systemfunc/NaviChangeReceiver$1;->this$0:Lcom/car/systemfunc/NaviChangeReceiver;
+#
+#    move-object/from16 v21, v0
+#
+#    move-object/from16 v0, v21
+#
+#    iget-object v0, v0, Lcom/car/systemfunc/NaviChangeReceiver;->mContext:Landroid/content/Context;
+#
+#    move-object/from16 v21, v0
+#
+#    const v22, 0x7f09003a
+#
+#    invoke-virtual/range {v21 .. v22}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+#
+#    move-result-object v16
+#
+#    .line 184
+#    :cond_6
+#    :goto_2
+#    move-object/from16 v0, p0
+#
+#    iget-object v0, v0, Lcom/car/systemfunc/NaviChangeReceiver$1;->this$0:Lcom/car/systemfunc/NaviChangeReceiver;
+#
+#    move-object/from16 v21, v0
+#
+#    move-object/from16 v0, v21
+#
+#    iget-boolean v0, v0, Lcom/car/systemfunc/NaviChangeReceiver;->mIsChinese:Z
+#
+#    move/from16 v21, v0
+#
+#    if-eqz v21, :cond_f
+#
+#    .line 185
+#    if-eqz v8, :cond_7
+#
+#    .line 186
+#    new-instance v21, Ljava/lang/StringBuilder;
+#
+#    invoke-direct/range {v21 .. v21}, Ljava/lang/StringBuilder;-><init>()V
+#
+#    move-object/from16 v0, v21
+#
+#    invoke-virtual {v0, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+#
+#    move-result-object v21
+#
+#    move-object/from16 v0, v21
+#
+#    invoke-virtual {v0, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+#
+#    move-result-object v21
+#
+#    invoke-virtual/range {v21 .. v21}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+#
+#    move-result-object v6
+#
+#    .line 188
+#    :cond_7
+#    if-eqz v20, :cond_8
+#
+#    .line 189
+#    new-instance v21, Ljava/lang/StringBuilder;
+#
+#    invoke-direct/range {v21 .. v21}, Ljava/lang/StringBuilder;-><init>()V
+#
+#    move-object/from16 v0, v21
+#
+#    invoke-virtual {v0, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+#
+#    move-result-object v21
+#
+#    move-object/from16 v0, v21
+#
+#    move-object/from16 v1, v20
+#
+#    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+#
+#    move-result-object v21
+#
+#    invoke-virtual/range {v21 .. v21}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+#
+#    move-result-object v6
+#
+#    .line 191
+#    :cond_8
+#    if-eqz v16, :cond_9
+#
+#    .line 192
+#    new-instance v21, Ljava/lang/StringBuilder;
+#
+#    invoke-direct/range {v21 .. v21}, Ljava/lang/StringBuilder;-><init>()V
+#
+#    move-object/from16 v0, v21
+#
+#    invoke-virtual {v0, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+#
+#    move-result-object v21
+#
+#    move-object/from16 v0, v21
+#
+#    move-object/from16 v1, v16
+#
+#    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+#
+#    move-result-object v21
+#
+#    invoke-virtual/range {v21 .. v21}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+#
+#    move-result-object v6
+#
+#    .line 194
+#    :cond_9
+#    if-eqz v14, :cond_a
+#
+#    .line 195
+#    new-instance v21, Ljava/lang/StringBuilder;
+#
+#    invoke-direct/range {v21 .. v21}, Ljava/lang/StringBuilder;-><init>()V
+#
+#    move-object/from16 v0, v21
+#
+#    invoke-virtual {v0, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+#
+#    move-result-object v21
+#
+#    move-object/from16 v0, v21
+#
+#    invoke-virtual {v0, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+#
+#    move-result-object v21
+#
+#    invoke-virtual/range {v21 .. v21}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+#
+#    move-result-object v6
+
+move-object/from16 v0, p0
+invoke-virtual {v0, v7}, Lcom/car/systemfunc/NaviChangeReceiver$1;->getSTR(I)Ljava/lang/String;
+move-result-object v6
 
     .line 211
     :cond_a
@@ -699,207 +734,209 @@
 
     goto/16 :goto_0
 
-    .line 175
-    .restart local v4    # "angle":I
-    .restart local v6    # "dirStr":Ljava/lang/String;
-    .restart local v7    # "direction":I
-    .restart local v8    # "east":Ljava/lang/String;
-    .restart local v13    # "lastCombine":I
-    .restart local v14    # "north":Ljava/lang/String;
-    .restart local v16    # "south":Ljava/lang/String;
-    .restart local v17    # "speed":I
-    .restart local v20    # "west":Ljava/lang/String;
-    :cond_c
-    int-to-float v0, v7
-
-    move/from16 v21, v0
-
-    const v22, 0x434a8000    # 202.5f
-
-    cmpl-float v21, v21, v22
-
-    if-lez v21, :cond_5
-
-    int-to-float v0, v7
-
-    move/from16 v21, v0
-
-    const v22, 0x43a8c000    # 337.5f
-
-    cmpg-float v21, v21, v22
-
-    if-gez v21, :cond_5
-
-    .line 176
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/car/systemfunc/NaviChangeReceiver$1;->this$0:Lcom/car/systemfunc/NaviChangeReceiver;
-
-    move-object/from16 v21, v0
-
-    move-object/from16 v0, v21
-
-    iget-object v0, v0, Lcom/car/systemfunc/NaviChangeReceiver;->mContext:Landroid/content/Context;
-
-    move-object/from16 v21, v0
-
-    const v22, 0x7f090039
-
-    invoke-virtual/range {v21 .. v22}, Landroid/content/Context;->getString(I)Ljava/lang/String;
-
-    move-result-object v20
-
-    goto/16 :goto_1
-
-    .line 181
-    :cond_d
-    int-to-double v0, v7
-
-    move-wide/from16 v22, v0
-
-    const-wide v24, 0x4050e00000000000L    # 67.5
-
-    cmpg-double v21, v22, v24
-
-    if-ltz v21, :cond_e
-
-    int-to-float v0, v7
-
-    move/from16 v21, v0
-
-    const v22, 0x43924000    # 292.5f
-
-    cmpl-float v21, v21, v22
-
-    if-lez v21, :cond_6
-
-    .line 182
-    :cond_e
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/car/systemfunc/NaviChangeReceiver$1;->this$0:Lcom/car/systemfunc/NaviChangeReceiver;
-
-    move-object/from16 v21, v0
-
-    move-object/from16 v0, v21
-
-    iget-object v0, v0, Lcom/car/systemfunc/NaviChangeReceiver;->mContext:Landroid/content/Context;
-
-    move-object/from16 v21, v0
-
-    const v22, 0x7f09003b
-
-    invoke-virtual/range {v21 .. v22}, Landroid/content/Context;->getString(I)Ljava/lang/String;
-
-    move-result-object v14
-
-    goto/16 :goto_2
-
-    .line 198
-    :cond_f
-    if-eqz v16, :cond_10
-
-    .line 199
-    new-instance v21, Ljava/lang/StringBuilder;
-
-    invoke-direct/range {v21 .. v21}, Ljava/lang/StringBuilder;-><init>()V
-
-    move-object/from16 v0, v21
-
-    invoke-virtual {v0, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v21
-
-    move-object/from16 v0, v21
-
-    move-object/from16 v1, v16
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v21
-
-    invoke-virtual/range {v21 .. v21}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v6
-
-    .line 201
-    :cond_10
-    if-eqz v14, :cond_11
-
-    .line 202
-    new-instance v21, Ljava/lang/StringBuilder;
-
-    invoke-direct/range {v21 .. v21}, Ljava/lang/StringBuilder;-><init>()V
-
-    move-object/from16 v0, v21
-
-    invoke-virtual {v0, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v21
-
-    move-object/from16 v0, v21
-
-    invoke-virtual {v0, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v21
-
-    invoke-virtual/range {v21 .. v21}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v6
-
-    .line 204
-    :cond_11
-    if-eqz v8, :cond_12
-
-    .line 205
-    new-instance v21, Ljava/lang/StringBuilder;
-
-    invoke-direct/range {v21 .. v21}, Ljava/lang/StringBuilder;-><init>()V
-
-    move-object/from16 v0, v21
-
-    invoke-virtual {v0, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v21
-
-    move-object/from16 v0, v21
-
-    invoke-virtual {v0, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v21
-
-    invoke-virtual/range {v21 .. v21}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v6
-
-    .line 207
-    :cond_12
-    if-eqz v20, :cond_a
-
-    .line 208
-    new-instance v21, Ljava/lang/StringBuilder;
-
-    invoke-direct/range {v21 .. v21}, Ljava/lang/StringBuilder;-><init>()V
-
-    move-object/from16 v0, v21
-
-    invoke-virtual {v0, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v21
-
-    move-object/from16 v0, v21
-
-    move-object/from16 v1, v20
-
-    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v21
-
-    invoke-virtual/range {v21 .. v21}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v6
-
-    goto/16 :goto_3
+#by boba 08.01.2021
+#cardinal points completely
+#    .line 175
+#    .restart local v4    # "angle":I
+#    .restart local v6    # "dirStr":Ljava/lang/String;
+#    .restart local v7    # "direction":I
+#    .restart local v8    # "east":Ljava/lang/String;
+#    .restart local v13    # "lastCombine":I
+#    .restart local v14    # "north":Ljava/lang/String;
+#    .restart local v16    # "south":Ljava/lang/String;
+#    .restart local v17    # "speed":I
+#    .restart local v20    # "west":Ljava/lang/String;
+#    :cond_c
+#    int-to-float v0, v7
+#
+#    move/from16 v21, v0
+#
+#    const v22, 0x434a8000    # 202.5f
+#
+#    cmpl-float v21, v21, v22
+#
+#    if-lez v21, :cond_5
+#
+#    int-to-float v0, v7
+#
+#    move/from16 v21, v0
+#
+#    const v22, 0x43a8c000    # 337.5f
+#
+#    cmpg-float v21, v21, v22
+#
+#    if-gez v21, :cond_5
+#
+#    .line 176
+#    move-object/from16 v0, p0
+#
+#    iget-object v0, v0, Lcom/car/systemfunc/NaviChangeReceiver$1;->this$0:Lcom/car/systemfunc/NaviChangeReceiver;
+#
+#    move-object/from16 v21, v0
+#
+#    move-object/from16 v0, v21
+#
+#    iget-object v0, v0, Lcom/car/systemfunc/NaviChangeReceiver;->mContext:Landroid/content/Context;
+#
+#    move-object/from16 v21, v0
+#
+#    const v22, 0x7f090039
+#
+#    invoke-virtual/range {v21 .. v22}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+#
+#    move-result-object v20
+#
+#    goto/16 :goto_1
+#
+#    .line 181
+#    :cond_d
+#    int-to-double v0, v7
+#
+#    move-wide/from16 v22, v0
+#
+#    const-wide v24, 0x4050e00000000000L    # 67.5
+#
+#    cmpg-double v21, v22, v24
+#
+#    if-ltz v21, :cond_e
+#
+#    int-to-float v0, v7
+#
+#    move/from16 v21, v0
+#
+#    const v22, 0x43924000    # 292.5f
+#
+#    cmpl-float v21, v21, v22
+#
+#    if-lez v21, :cond_6
+#
+#    .line 182
+#    :cond_e
+#    move-object/from16 v0, p0
+#
+#    iget-object v0, v0, Lcom/car/systemfunc/NaviChangeReceiver$1;->this$0:Lcom/car/systemfunc/NaviChangeReceiver;
+#
+#    move-object/from16 v21, v0
+#
+#    move-object/from16 v0, v21
+#
+#    iget-object v0, v0, Lcom/car/systemfunc/NaviChangeReceiver;->mContext:Landroid/content/Context;
+#
+#    move-object/from16 v21, v0
+#
+#    const v22, 0x7f09003b
+#
+#    invoke-virtual/range {v21 .. v22}, Landroid/content/Context;->getString(I)Ljava/lang/String;
+#
+#    move-result-object v14
+#
+#    goto/16 :goto_2
+#
+#    .line 198
+#    :cond_f
+#    if-eqz v16, :cond_10
+#
+#    .line 199
+#    new-instance v21, Ljava/lang/StringBuilder;
+#
+#    invoke-direct/range {v21 .. v21}, Ljava/lang/StringBuilder;-><init>()V
+#
+#    move-object/from16 v0, v21
+#
+#    invoke-virtual {v0, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+#
+#    move-result-object v21
+#
+#    move-object/from16 v0, v21
+#
+#    move-object/from16 v1, v16
+#
+#    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+#
+#    move-result-object v21
+#
+#    invoke-virtual/range {v21 .. v21}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+#
+#    move-result-object v6
+#
+#    .line 201
+#    :cond_10
+#    if-eqz v14, :cond_11
+#
+#    .line 202
+#    new-instance v21, Ljava/lang/StringBuilder;
+#
+#    invoke-direct/range {v21 .. v21}, Ljava/lang/StringBuilder;-><init>()V
+#
+#    move-object/from16 v0, v21
+#
+#    invoke-virtual {v0, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+#
+#    move-result-object v21
+#
+#    move-object/from16 v0, v21
+#
+#    invoke-virtual {v0, v14}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+#
+#    move-result-object v21
+#
+#    invoke-virtual/range {v21 .. v21}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+#
+#    move-result-object v6
+#
+#    .line 204
+#    :cond_11
+#    if-eqz v8, :cond_12
+#
+#    .line 205
+#    new-instance v21, Ljava/lang/StringBuilder;
+#
+#    invoke-direct/range {v21 .. v21}, Ljava/lang/StringBuilder;-><init>()V
+#
+#    move-object/from16 v0, v21
+#
+#    invoke-virtual {v0, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+#
+#    move-result-object v21
+#
+#    move-object/from16 v0, v21
+#
+#    invoke-virtual {v0, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+#
+#    move-result-object v21
+#
+#    invoke-virtual/range {v21 .. v21}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+#
+#    move-result-object v6
+#
+#    .line 207
+#    :cond_12
+#    if-eqz v20, :cond_a
+#
+#    .line 208
+#    new-instance v21, Ljava/lang/StringBuilder;
+#
+#    invoke-direct/range {v21 .. v21}, Ljava/lang/StringBuilder;-><init>()V
+#
+#    move-object/from16 v0, v21
+#
+#    invoke-virtual {v0, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+#
+#    move-result-object v21
+#
+#    move-object/from16 v0, v21
+#
+#    move-object/from16 v1, v20
+#
+#    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+#
+#    move-result-object v21
+#
+#    invoke-virtual/range {v21 .. v21}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+#
+#    move-result-object v6
+#
+#    goto/16 :goto_3
 
     .line 215
     .end local v4    # "angle":I
