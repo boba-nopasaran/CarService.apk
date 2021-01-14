@@ -41,7 +41,11 @@
 
 # virtual methods
 .method public onClick(Landroid/view/View;)V
-    .locals 7
+#by boba 11.08.2020
+#restore wifi
+#    .locals 7
+.locals 10
+
     .param p1, "v"    # Landroid/view/View;
 
     .prologue
@@ -128,6 +132,16 @@
 
     .line 1676
     :cond_0
+	
+#by boba 11.08.2020
+#restore wifi
+iget-object v7, p0, Lcom/car/systemfunc/PowerConnectionReceiver$12;->this$0:Lcom/car/systemfunc/PowerConnectionReceiver;
+invoke-static {v7}, Lcom/car/systemfunc/PowerConnectionReceiver;->access$boba(Lcom/car/systemfunc/PowerConnectionReceiver;)Landroid/content/ContentResolver;
+move-result-object v7
+const-string v8, "wifi_on"
+invoke-static {v7, v8}, Landroid/provider/Settings$Global;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;)I
+move-result v9
+	
     iget-object v2, p0, Lcom/car/systemfunc/PowerConnectionReceiver$12;->this$0:Lcom/car/systemfunc/PowerConnectionReceiver;
 
     invoke-static {v2}, Lcom/car/systemfunc/PowerConnectionReceiver;->access$900(Lcom/car/systemfunc/PowerConnectionReceiver;)Landroid/net/wifi/WifiManager;
@@ -135,6 +149,10 @@
     move-result-object v2
 
     invoke-virtual {v2, v5}, Landroid/net/wifi/WifiManager;->setWifiEnabled(Z)Z
+	
+#by boba 11.08.2020
+#restore wifi
+invoke-static {v7, v8, v9}, Landroid/provider/Settings$Global;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z	
 
     .line 1677
     const-string v2, "CarSvc_PowerConnectionReceiver"
