@@ -517,8 +517,10 @@
 
     iput-boolean v0, p0, Lcom/car/systemfunc/NaviHudActivity;->mFinishedNow:Z
 
-    .line 208
-    invoke-virtual {p0}, Lcom/car/systemfunc/NaviHudActivity;->finish()V
+#by boba 02.10.2020
+#no close navihud on pause
+#    .line 208
+#    invoke-virtual {p0}, Lcom/car/systemfunc/NaviHudActivity;->finish()V
 
     .line 210
     :cond_0
