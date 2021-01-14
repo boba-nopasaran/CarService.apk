@@ -1270,7 +1270,10 @@
     .line 548
     iget-object v3, p0, Lcom/car/systemfunc/NaviChangeReceiver;->mWindowManagerParams:Landroid/view/WindowManager$LayoutParams;
 
-    const/16 v4, 0x168
+#by boba 02.03.2020
+#clock right align
+#    const/16 v4, 0x168
+const/16 v4, -0x2
 
     iput v4, v3, Landroid/view/WindowManager$LayoutParams;->width:I
 
