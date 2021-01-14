@@ -172,6 +172,10 @@
     <public type="string" name="lowvoltage" id="0x7f090055" />
     <public type="string" name="gps_ok" id="0x7f090056" />
     <public type="string" name="gps_error" id="0x7f090057" />
+    <public type="string" name="northeast" id="0x7f090058" />
+    <public type="string" name="southeast" id="0x7f090059" />
+    <public type="string" name="southwest" id="0x7f09005a" />
+    <public type="string" name="northwest" id="0x7f09005b" />
     <public type="style" name="voice_dialog" id="0x7f0a0000" />
     <public type="style" name="voice_activity" id="0x7f0a0001" />
     <public type="style" name="hud_activity" id="0x7f0a0002" />

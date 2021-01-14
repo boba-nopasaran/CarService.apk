@@ -51,6 +51,10 @@ cardinal points completely -->
     <string name="west">Запад</string>
     <string name="south">Юг</string>
     <string name="north">Север</string>
+    <string name="northeast">Северо-восток</string>
+    <string name="southeast">Юго-восток</string>
+    <string name="southwest">Юго-запад</string>
+    <string name="northwest">Северо-запад</string>	
     <string name="ota_latest">Последняя версия установлена</string>
     <string name="ota_downloading">Загрузка ...</string>
     <string name="background_dl">Загрузка в фоновом режиме</string>

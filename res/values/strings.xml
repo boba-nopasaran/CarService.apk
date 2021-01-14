@@ -60,6 +60,10 @@
     <string name="west">W</string>
     <string name="south">S</string>
     <string name="north">N</string>
+    <string name="northeast">NE</string>
+    <string name="southeast">SE</string>
+    <string name="southwest">SW</string>
+    <string name="northwest">NW</string>
     <string name="ok">OK</string>
     <string name="ota_latest">Latest version installed already</string>
     <string name="ota_downloading">Downloading...</string>
