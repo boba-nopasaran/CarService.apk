@@ -2848,6 +2848,12 @@ const/16 v4, -0x2
 
     invoke-static/range {v27 .. v28}, Landroid/os/SystemProperties;->set(Ljava/lang/String;Ljava/lang/String;)V
 
+#by boba 11.08.2020
+#screensave after stoppreview
+const-wide/16 v2, 0x0
+move-object/from16 v1, p0
+iput-wide v2, v1, Lcom/car/systemfunc/NaviChangeReceiver;->mLastUserTime:J
+
     goto/16 :goto_0
 
     .line 333
