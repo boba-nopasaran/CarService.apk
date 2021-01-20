@@ -1069,7 +1069,10 @@
     iput-object v3, v4, Lcom/car/systemfunc/NaviChangeReceiver$ShortCutNavi;->mDir:Landroid/widget/TextView;
 
     .line 473
-    const-string v3, "ro.hud.color"
+#by boba 19.20.2021
+#navihud colors
+#    const-string v3, "ro.hud.color"
+const-string v3, "persist.hud.color"
 
     const-string v4, ""
 
@@ -1109,7 +1112,10 @@
 
     move-result v3
 
-    if-lez v3, :cond_1
+#by boba 19.20.2021
+#navihud colors
+#    if-lez v3, :cond_1
+if-eqz v3, :cond_1
 
     .line 478
     iget-object v3, p0, Lcom/car/systemfunc/NaviChangeReceiver;->mShortCutNavi:Lcom/car/systemfunc/NaviChangeReceiver$ShortCutNavi;
@@ -1140,7 +1146,10 @@
 
     move-result v3
 
-    if-lez v3, :cond_2
+#by boba 19.20.2021
+#navihud colors
+#    if-lez v3, :cond_2
+if-eqz v3, :cond_2
 
     .line 480
     iget-object v3, p0, Lcom/car/systemfunc/NaviChangeReceiver;->mShortCutNavi:Lcom/car/systemfunc/NaviChangeReceiver$ShortCutNavi;
@@ -1171,7 +1180,10 @@
 
     move-result v3
 
-    if-lez v3, :cond_3
+#by boba 19.20.2021
+#navihud colors
+#    if-lez v3, :cond_3
+if-eqz v3, :cond_3
 
     .line 482
     iget-object v3, p0, Lcom/car/systemfunc/NaviChangeReceiver;->mShortCutNavi:Lcom/car/systemfunc/NaviChangeReceiver$ShortCutNavi;
@@ -1202,7 +1214,10 @@
 
     move-result v3
 
-    if-lez v3, :cond_4
+#by boba 19.20.2021
+#navihud colors
+#    if-lez v3, :cond_4
+if-eqz v3, :cond_4
 
     .line 484
     iget-object v3, p0, Lcom/car/systemfunc/NaviChangeReceiver;->mShortCutNavi:Lcom/car/systemfunc/NaviChangeReceiver$ShortCutNavi;
