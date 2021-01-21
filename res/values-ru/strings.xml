@@ -47,10 +47,10 @@
     <string name="north">Север</string>
 <!--by boba 18.12.2020
 cardinal points completely -->
-    <string name="northeast">Северо-восток</string>
-    <string name="southeast">Юго-восток</string>
-    <string name="southwest">Юго-запад</string>
-    <string name="northwest">Северо-запад</string>
+    <string name="northeast">Северо-Восток</string>
+    <string name="southeast">Юго-Восток</string>
+    <string name="southwest">Юго-Запад</string>
+    <string name="northwest">Северо-Запад</string>
     <string name="gps_ok">GPS сигнал найден</string>
     <string name="gps_error">GPS местоположение не в порядке</string>
     <string name="statement">Голосовая технология, предоставленная iFlytek</string>
