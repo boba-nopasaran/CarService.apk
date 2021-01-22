@@ -37,7 +37,7 @@
     <string name="now">Сейчас</string>
     <string name="loc_from_app">Указанная точка</string>
     <string name="waiting_txz_init">Ожидание распаковки файлов. Убедитесь, что сетевое подключение установлено</string>
-    <string name="brightness_adj">свайп для изменения</string>
+    <string name="brightness_adj">Cвайп для изменения яркости</string>
     <string name="suspend">Сон</string>
     <string name="shutdown">Выключение</string>
     <string name="reboot">Перезагрузка</string>
