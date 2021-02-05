@@ -175,6 +175,13 @@
 
     if-eqz v7, :cond_1
 
+#by boba 05.02.2021
+#position for logo    
+const-string v7, "persist.hudlogo.direction"
+invoke-static {v7, v10}, Landroid/os/SystemProperties;->getInt(Ljava/lang/String;I)I
+move-result v1
+if-eqz v1, :cond_1
+
     .line 120
     new-instance v3, Landroid/widget/ImageView;
 
@@ -193,13 +200,15 @@
 
     invoke-direct {v5, v9, v9}, Landroid/widget/FrameLayout$LayoutParams;-><init>(II)V
 
-    .line 123
-    .local v5, "params":Landroid/widget/FrameLayout$LayoutParams;
-    const-string v7, "ro.hudlogo.direction"
-
-    invoke-static {v7, v11}, Landroid/os/SystemProperties;->getInt(Ljava/lang/String;I)I
-
-    move-result v1
+#by boba 05.02.2021
+#position for logo
+#    .line 123
+#    .local v5, "params":Landroid/widget/FrameLayout$LayoutParams;
+#    const-string v7, "ro.hudlogo.direction"
+#
+#    invoke-static {v7, v11}, Landroid/os/SystemProperties;->getInt(Ljava/lang/String;I)I
+#
+#    move-result v1
 
     .line 124
     .local v1, "direction":I
