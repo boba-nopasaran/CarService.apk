@@ -8767,6 +8767,12 @@ return-object v0
 
     const-wide/16 v2, 0x1f4
 
+#by boba 05.02.2021
+#delay shutdown when starting the engine
+const-string v4, "persist.accoff.delay"
+invoke-static {v4, v2, v3}, Landroid/os/SystemProperties;->getLong(Ljava/lang/String;J)J
+move-result-wide v2
+
     :cond_7
     invoke-virtual {v1, v5, v2, v3}, Landroid/os/Handler;->sendEmptyMessageDelayed(IJ)Z
 
