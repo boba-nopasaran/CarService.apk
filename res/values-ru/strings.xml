@@ -74,4 +74,14 @@ cardinal points completely -->
     <string name="nosd">Нет SD-карты</string>
     <string name="more">Используйте помощника для настроек</string>
     <string name="lowvoltage">Низкое напряжение, устройство будет выключено</string>
+    <string name="ota_check_failed">Ошибка проверки обновлений</string>
+    <string name="ota_check_failed_msg">Пожалуйста проверьте подключение</string>
+    <string name="ota_check_succeed">Найдено обновление прошивки, скачать?</string>
+    <string name="ota_checking">Проверка обновлений</string>
+    <string name="ota_download_succeed">Обновление скачено, установить?</string>
+    <string name="ota_downloading">Скачивание...</string>
+    <string name="ota_latest">Установлена последняя версия</string>
+    <string name="ota_tips">Убедитесь в надежности питания</string>
+    <string name="ota_check_invalid_msg">Ошибка проверки, попробуйте позже</string>
+    <string name="background_dl">Скачать в фоне</string>
 </resources>
