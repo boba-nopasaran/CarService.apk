@@ -64,6 +64,9 @@
 
 .field mReference:J
 
+#by boba 16.03.2021
+#desc ota
+.field mDescr:Ljava/lang/String;
 
 # direct methods
 .method static constructor <clinit>()V
@@ -162,6 +165,11 @@
     invoke-direct {v0, p0}, Lcom/car/systemfunc/OtaChecker$1;-><init>(Lcom/car/systemfunc/OtaChecker;)V
 
     iput-object v0, p0, Lcom/car/systemfunc/OtaChecker;->mHandler:Landroid/os/Handler;
+
+#by boba 16.03.2021
+#desc ota
+const-string v0, ""
+iput-object v0, p0, Lcom/car/systemfunc/OtaChecker;->mDescr:Ljava/lang/String;
 
     .line 303
     return-void

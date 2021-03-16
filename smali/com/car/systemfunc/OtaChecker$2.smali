@@ -423,6 +423,17 @@
     move-result-object v19
 
     invoke-interface/range {v19 .. v19}, Landroid/content/SharedPreferences$Editor;->apply()V
+
+#by boba 16.03.2021
+#desc ota
+const-string v19, "desc"
+move-object/from16 v0, v19
+invoke-virtual {v13, v0}, Lorg/json/JSONObject;->optString(Ljava/lang/String;)Ljava/lang/String;
+move-result-object v12
+move-object/from16 v0, p0
+iget-object v0, v0, Lcom/car/systemfunc/OtaChecker$2;->this$0:Lcom/car/systemfunc/OtaChecker;
+iput-object v12, v0, Lcom/car/systemfunc/OtaChecker;->mDescr:Ljava/lang/String;
+
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 

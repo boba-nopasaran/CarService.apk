@@ -846,6 +846,13 @@
 
     invoke-virtual {v4, v0}, Landroid/app/AlertDialog$Builder;->setTitle(I)Landroid/app/AlertDialog$Builder;
 
+#by boba 16.03.2021
+#desc ota
+move-object/from16 v0, p0
+iget-object v0, v0, Lcom/car/systemfunc/OtaChecker$1;->this$0:Lcom/car/systemfunc/OtaChecker;
+iget-object v0, v0, Lcom/car/systemfunc/OtaChecker;->mDescr:Ljava/lang/String;
+invoke-virtual {v4, v0}, Landroid/app/AlertDialog$Builder;->setMessage(Ljava/lang/CharSequence;)Landroid/app/AlertDialog$Builder;
+
     .line 241
     const v16, 0x7f09003c
 
