@@ -629,9 +629,10 @@
     move-object/from16 v0, p0
 
     invoke-virtual {v3, v0}, Lcom/car/common/NetChangeReceiver;->init(Landroid/app/Application;)V
-
-    .line 419
-    invoke-static/range {p0 .. p0}, Lcom/car/systemfunc/DataCardManager;->create(Landroid/content/Context;)V
+#by boba 12.04.2021
+#disable SIM check (Please use the valid SIM)
+#    .line 419
+#    invoke-static/range {p0 .. p0}, Lcom/car/systemfunc/DataCardManager;->create(Landroid/content/Context;)V
 
     .line 420
     new-instance v3, Lcom/car/systemfunc/NaviManager;
