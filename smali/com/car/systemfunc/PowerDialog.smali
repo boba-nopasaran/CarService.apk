@@ -309,8 +309,9 @@
     .line 93
     .end local v4    # "viewSuspend":Lcom/car/systemfunc/ImageViewIcon;
     :cond_1
-
-    invoke-virtual {v3, v8}, Landroid/view/View;->setVisibility(I)V
+#by boba 14.04.2021
+#shutdown button
+#    invoke-virtual {v3, v8}, Landroid/view/View;->setVisibility(I)V
 
     goto :goto_0
 
