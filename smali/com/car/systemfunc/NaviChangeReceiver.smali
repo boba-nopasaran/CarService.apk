@@ -2667,6 +2667,12 @@ const/16 v4, -0x2
 
     move-result v22
 
+#by boba 15.04.2021
+#no close navihud on pause
+const-string v1, "navi"
+invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->getBooleanExtra(Ljava/lang/String;Z)Z
+move-result v23
+
     .line 408
     .local v22, "show":Z
     if-nez v22, :cond_9
@@ -2731,9 +2737,11 @@ const/16 v4, -0x2
     move-object/from16 v27, v0
 
     move-object/from16 v0, v27
-
+#by boba 15.04.2021
+#no close navihud on pause
+if-nez v23, :cond_navi
     invoke-virtual {v0, v10}, Landroid/content/Context;->startActivity(Landroid/content/Intent;)V
-
+:cond_navi
     .line 423
     const-string v27, "persist.sys.hud.show"
 

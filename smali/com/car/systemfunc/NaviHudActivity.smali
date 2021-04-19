@@ -507,27 +507,27 @@ if-eqz v1, :cond_1
 
     invoke-virtual {v0, v1}, Landroid/os/Handler;->removeMessages(I)V
 
+    .line 204
+    new-instance v0, Landroid/content/Intent;
+
+    const-string v1, "com.car.hud.dismiss"
+
+    invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {p0, v0}, Lcom/car/systemfunc/NaviHudActivity;->sendBroadcast(Landroid/content/Intent;)V
+
+    .line 205
+    iget-boolean v0, p0, Lcom/car/systemfunc/NaviHudActivity;->mFinishedNow:Z
+
+    if-nez v0, :cond_0
+
+    .line 206
+    const/4 v0, 0x1
+
+    iput-boolean v0, p0, Lcom/car/systemfunc/NaviHudActivity;->mFinishedNow:Z
+
 #by boba 02.10.2020
 #no close navihud on pause
-#    .line 204
-#    new-instance v0, Landroid/content/Intent;
-
-#    const-string v1, "com.car.hud.dismiss"
-
-#    invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
-
-#    invoke-virtual {p0, v0}, Lcom/car/systemfunc/NaviHudActivity;->sendBroadcast(Landroid/content/Intent;)V
-
-#    .line 205
-#    iget-boolean v0, p0, Lcom/car/systemfunc/NaviHudActivity;->mFinishedNow:Z
-
-#    if-nez v0, :cond_0
-
-#    .line 206
-#    const/4 v0, 0x1
-
-#    iput-boolean v0, p0, Lcom/car/systemfunc/NaviHudActivity;->mFinishedNow:Z
-
 #    .line 208
 #    invoke-virtual {p0}, Lcom/car/systemfunc/NaviHudActivity;->finish()V
 
@@ -566,6 +566,19 @@ invoke-virtual {v0, v1}, Landroid/os/Handler;->sendEmptyMessage(I)Z
     const/4 v0, 0x0
 
     iput-boolean v0, p0, Lcom/car/systemfunc/NaviHudActivity;->mFinishedNow:Z
+
+#by boba 15.04.2021
+#no close navihud on pause
+new-instance v0, Landroid/content/Intent;
+const-string v1, "com.car.hud.show"
+invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+const-string v1, "show"
+const/4 v2, 0x1
+invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
+const-string v1, "navi"
+const/4 v2, 0x1
+invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
+invoke-virtual {p0, v0}, Lcom/car/systemfunc/NaviHudActivity;->sendBroadcast(Landroid/content/Intent;)V
 
     .line 270
     return-void
