@@ -1370,7 +1370,10 @@ const/16 v4, -0x2
 #    invoke-interface {v3, v4, v5}, Landroid/view/WindowManager;->updateViewLayout(Landroid/view/View;Landroid/view/ViewGroup$LayoutParams;)V
 
     .line 559
-    const-string v3, "ro.hud.enable"
+#by boba 16.05.2021
+#hud settings
+#    const-string v3, "ro.hud.enable"
+const-string v3, "persist.hud.enable"
 
     invoke-static {v3, v6}, Landroid/os/SystemProperties;->getBoolean(Ljava/lang/String;Z)Z
 

@@ -1323,7 +1323,10 @@ move-result-object v6
 
     .line 240
     .local v15, "powerManager":Landroid/os/PowerManager;
-    const-string v21, "ro.hud.enable"
+#by boba 16.05.2021
+#hud settings
+#    const-string v21, "ro.hud.enable"
+const-string v21, "persist.hud.enable"
 
     const/16 v22, 0x1
 
