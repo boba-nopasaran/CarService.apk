@@ -2690,7 +2690,10 @@ return-object v0
     invoke-interface {v5}, Landroid/content/SharedPreferences$Editor;->apply()V
 
     .line 495
-    const-string v5, "ro.accoff.blmin"
+#by boba 31.07.2021
+#backlight on shutdown dialog
+#    const-string v5, "ro.accoff.blmin"
+const-string v5, "persist.accoff.blmin"
 
     invoke-static {v5, v6}, Landroid/os/SystemProperties;->getInt(Ljava/lang/String;I)I
 
@@ -2778,7 +2781,10 @@ return-object v0
     invoke-interface {v5}, Landroid/content/SharedPreferences$Editor;->apply()V
 
     .line 507
-    const-string v5, "ro.accoff.blmin"
+#by boba 31.07.2021
+#backlight on shutdown dialog
+#    const-string v5, "ro.accoff.blmin"
+const-string v5, "persist.accoff.blmin"
 
     invoke-static {v5, v6}, Landroid/os/SystemProperties;->getInt(Ljava/lang/String;I)I
 
@@ -2811,7 +2817,10 @@ return-object v0
 
     .line 513
     :cond_6
-    const-string v5, "ro.accoff.blmin"
+#by boba 31.07.2021
+#backlight on shutdown dialog
+#    const-string v5, "ro.accoff.blmin"
+const-string v5, "persist.accoff.blmin"
 
     invoke-static {v5, v6}, Landroid/os/SystemProperties;->getInt(Ljava/lang/String;I)I
 
@@ -4831,7 +4840,10 @@ return-object v0
     invoke-interface/range {v49 .. v49}, Landroid/content/SharedPreferences$Editor;->apply()V
 
     .line 1045
-    const-string v49, "ro.accoff.blmin"
+#by boba 31.07.2021
+#backlight on shutdown dialog
+#    const-string v49, "ro.accoff.blmin"
+const-string v49, "persist.accoff.blmin"
 
     const/16 v50, 0x1
 
@@ -4876,7 +4888,10 @@ return-object v0
 
     .line 1051
     :cond_23
-    const-string v49, "ro.accoff.blmin"
+#by boba 31.07.2021
+#backlight on shutdown dialog
+#    const-string v49, "ro.accoff.blmin"
+const-string v49, "persist.accoff.blmin"
 
     const/16 v50, 0x1
 
